@@ -1,0 +1,77 @@
+/* Navbar */
+
+.navbar {
+    padding: 5px;
+    background: #004FF9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFF94C, #004FF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    flex: 1;
+}
+
+.navbar ul li {
+    margin: 0 65px;
+    text-align: center;
+
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*.Body.*/
+
+body {
+    font-family: 'Alexandria';
+    font-size: 22px;
+    font-size: 22px;
+    font-size: x-large;
+    background-color: #000000;
+}
+
+/*.Logo.*/
+
+.logo {
+    height: 95px;
+    /* ajusta según el tamaño real del escudo */
+    margin-right: 20px;
+}
+
+main {
+    color: white;
+    font-size: medium;
+}
+
+#Historia {
+    background-image: url("https://imgs.search.brave.com/hRjbso2Qoy99nbNIWTHSFOG_EmI3A9LmnkiYJkhXm-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lc3Rh/dGljb3MtY2RuLnBy/ZW5zYWliZXJpY2Eu/ZXMvY2xpcC84YjZk/MmRlNy1kYmNmLTRk/MDctYmYzMi02YjYx/ZDdiZWYxNWJfMTYt/OS1hc3BlY3QtcmF0/aW9fZGVmYXVsdF8w/LmpwZw");
+    background-repeat: no-repeat, repeat;
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenedor {
+    display: flex;
+    color: white;
+}
+
+.columna {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: justify;
+}
