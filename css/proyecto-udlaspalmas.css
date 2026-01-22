@@ -43,9 +43,18 @@ body {
 /*.Logo.*/
 
 .logo {
-    height: 95px;
-    /* ajusta según el tamaño real del escudo */
-    margin-right: 20px;
+  width: 95px;
+  animation: girarX 2s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes girarX {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 main {
@@ -117,5 +126,14 @@ main {
 
 .footer{
 flex:1; text-align:right;
+border-radius: 30%;
 }
 
+.zoom {
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* 1.2 = 20% más grande */
+}
