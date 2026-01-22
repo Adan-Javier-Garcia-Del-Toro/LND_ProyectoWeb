@@ -43,18 +43,19 @@ body {
 /*.Logo.*/
 
 .logo {
-  width: 95px;
-  animation: girarX 2s linear infinite;
-  transform-style: preserve-3d;
+    width: 95px;
+    animation: girarX 2s linear infinite;
+    transform-style: preserve-3d;
 }
 
 @keyframes girarX {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 main {
@@ -124,16 +125,37 @@ main {
     width: 150%;
 }
 
-.footer{
-flex:1; text-align:right;
-border-radius: 30%;
+.footer {
+    flex: 1;
+    text-align: right;
+
+
+    color: rgb(255, 255, 255);
+
+    padding: 15px;
+
+    font-family: 'Acme';
+    font-size: 22px;
 }
 
 .zoom {
-  width: 200px;
-  transition: transform 0.3s ease;
+    width: 200px;
+    transition: transform 0.3s ease;
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* 1.2 = 20% más grande */
+    transform: scale(1.5);
+    /* 1.2 = 20% más grande */
+}
+
+.a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contacto {
+
+    flex: 1;
+    text-align: left;
+    padding: 15px;
 }
