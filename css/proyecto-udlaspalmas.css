@@ -159,3 +159,50 @@ main {
     text-align: left;
     padding: 15px;
 }
+
+/* Media queries para columnas de la sección Historia */
+@media screen and (min-width: 576px) {
+    .contenedor .columna {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .contenedor .columna {
+        float: left;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+}
+
+/* Media query para la orientación de pantalla */
+@media screen and (orientation: landscape) {
+    header {
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+}
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
