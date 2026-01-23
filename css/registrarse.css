@@ -116,4 +116,10 @@ body {
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+      background:
+    linear-gradient(
+      rgba(220, 234, 237, .7),
+      rgba(220, 234, 237, .7)
+    ),
+    url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png) repeat;
 }
