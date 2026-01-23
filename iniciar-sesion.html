@@ -6,121 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
     <link rel="stylesheet" href="css/iniciar-sesion.css">
-    <link href='https://fonts.googleapis.com/css?family=Aoboshi One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
 </head>
 
 <body>
     <form action="/action_page.php">
-        <h2> <img src="img/UD Las Palmas - Logo.png" class="logo"> FORMULARIO DE INICIO DE SESIÓN</h2>
-        <div>
-            <label id="fname">NOMBRE</label>
-            <input class="azul" type="text" name="nombre">
-            <br>
-            <br>
-            <br>
-            <label id="lname">APELLIDOS</label>
-            <input class="azul" type="text" name="apellidos">
-            <br>
-            <br>
-            <br>
-            <label id="lname">FECHA NACIMIENTO</label>
-            <input class="select" type="date">
-            <br>
-            <br>
-            <br>
-            <label id="lname">EMAIL</label>
-            <input class="azul" type="email" name="Email">
-            <br>
-            <br>
-            <br>
-            <label id="lname">CIUDAD</label>
-            <select class="select" id="Country">
-                <option class="select" value="Elige">Elige un país</option>
-                <option class="select" value="esp">España</option>
-                <option class="select" value="fr">Francia</option>
-                <option class="select" value="en">Inglaterra</option>
-                <option class="select" value="ger">Alemania</option>
-                <option class="select" value="cr">Croacia</option>
-                <option class="select" value="bg">Bélgica</option>
-                <option class="select" value="mx">México</option>
-                <option class="select" value="bz">Brazil</option>
-                <option class="select" value="cb">Cuba</option>
-            </select>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="usuario"/>
+      <input type="password" placeholder="contraseña"/>
+      <button>entrar</button>
+      <p class="message">¿No tienes cuenta? <a href="registrarse.html">Regístrate</a></p>
+    </form>
+  </div>
+</div>
 
-        </div>
-        <div>
-            <br>
-            <label id="lname">NÚMERO DE TELÉFONO</label>
-            <select name="prefijo" class="prefijo">
-                <optgroup label="🌍 Europa">
-                    <option value="+34" class="prefijo">+34 (España)</option>
-                    <option value="+33" class="prefijo">+33 (Francia)</option>
-                    <option value="+44" class="prefijo">+44 (Reino Unido)</option>
-                    <option value="+49" class="prefijo">+49 (Alemania)</option>
-                    <option value="+39" class="prefijo">+39 (Italia)</option>
-                    <option value="+351" class="prefijo">+351 (Portugal)</option>
-                    <option value="+32" class="prefijo">+32 (Bélgica)</option>
-                    <option value="+31" class="prefijo">+31 (Países Bajos)</option>
-                    <option value="+41" class="prefijo">+41 (Suiza)</option>
-                    <option value="+43" class="prefijo">+43 (Austria)</option>
-                    <option value="+353" class="prefijo">+353 (Irlanda)</option>
-                    <option value="+45" class="prefijo">+45 (Dinamarca)</option>
-                    <option value="+46" class="prefijo">+46 (Suecia)</option>
-                    <option value="+47" class="prefijo">+47 (Noruega)</option>
-                    <option value="+358" class="prefijo">+358 (Finlandia)</option>
-                </optgroup>
+     <div class="footer">
+        <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
 
-                <optgroup label="🌎 América">
-                    <option value="+1" class="prefijo">+1 (Estados Unidos)</option>
-                    <option value="+1" class="prefijo">+1 (Canadá)</option>
-                    <option value="+52" class="prefijo">+52 (México)</option>
-                    <option value="+54" class="prefijo">+54 (Argentina)</option>
-                    <option value="+55" class="prefijo">+55 (Brasil)</option>
-                    <option value="+56" class="prefijo"> +56 (Chile)</option>
-                    <option value="+57" class="prefijo"> +57 (Colombia)</option>
-                    <option value="+58" class="prefijo"> +58 (Venezuela)</option>
-                    <option value="+51" class="prefijo"> +51 (Perú)</option>
-                    <option value="+53" class="prefijo"> +53 (Cuba)</option>
-                </optgroup>
+        <a target="_blank" href="https://www.facebook.com/udlaspalmasoficial"><img
+            src="../LND_ProyectoWeb/img/facebook.png" alt="Facebook" 
+            style="width:2%; margin-right:10px;"></a>
 
-                <optgroup label="🌍 África">
-                    <option value="+212" class="prefijo"> +212 (Marruecos)</option>
-                    <option value="+213" class="prefijo"> +213 (Argelia)</option>
-                    <option value="+20" class="prefijo"> +20 (Egipto)</option>
-                    <option value="+234" class="prefijo"> +234 (Nigeria)</option>
-                    <option value="+27" class="prefijo"> +27 (Sudáfrica)</option>
-                </optgroup>
+        <a target="_blank" href="https://www.instagram.com/udlaspalmasoficial"><img
+            src="../LND_ProyectoWeb/img/instagram.png" alt="Instagram" 
+            style="width:2%; margin-right:10px;"></a>
 
-                <optgroup label="🌏 Asia">
-                    <option value="+81" class="prefijo"> +81 (Japón)</option>
-                    <option value="+82" class="prefijo"> +82 (Corea del Sur)</option>
-                    <option value="+86" class="prefijo"> +86 (China)</option>
-                    <option value="+91" class="prefijo"> +91 (India)</option>
-                    <option value="+971" class="prefijo"> +971 (Emiratos Árabes Unidos)</option>
-                    <option value="+966" class="prefijo"> +966 (Arabia Saudí)</option>
-                </optgroup>
+        <a target="_blank" href="https://www.linkedin.com/company/ud-las-palmas-sad/"><img
+            src="../LND_ProyectoWeb/img/linkedin.png" alt="LinkedIn" 
+            style="width:2%; margin-right:10px;"></a>
 
-                <optgroup label="🌊 Oceanía">
-                    <option value="+61" class="prefijo"> +61 (Australia)</option>
-                    <option value="+64" class="prefijo"> +64 (Nueva Zelanda)</option>
-                </optgroup>
-            </select>
+        <a target="_blank" href="https://www.tiktok.com/@udlp_oficial"><img
+            src="../LND_ProyectoWeb/img/icono-tiktok.png" alt="TikTok"
+            style="width:2%; margin-right:10px;border-radius: 30%;"></a>
 
-            <input class="azul" type="text" name="NUMERO DE TELÉFONO" value="‪928 444444‬">
-            <br>
-            <br>
-            <br>
-            <label id="lname">SEXO</label>
-            <input class="sexo" type="radio" name="sexo" value="hombre"> Hombre
-            <br>
-            <input class="sexo" type="radio" name="sexo" value="mujer"> Mujer
-            <br>
-            <input class="sexo" type="radio" name="sexo" value="otros" checked> Otros
-            <br>
-            <br>
-            <br>
-            <input type="button" name="enviardatos" value="Enviar datos" class="enviardatos">
-        </div>
+        <a target="_blank" href="https://x.com/UDLP_Oficial"><img 
+          src="../LND_ProyectoWeb/img/twitter.jpg" alt="Twitter"
+          style="width:2%; margin-right:10px;border-radius: 30%;"></a>
+
+        <a target="_blank" href="https://www.whatsapp.com/channel/0029Va3r1ug9WtBxlq7Bxm3p?j=936861&sfmc_sub=162942599&l=73_HTML&u=17207263&mid=510001041&jb=2006"><img
+          src="../LND_ProyectoWeb/img/whatsapp.png" alt="WhatssApp" 
+          style="width:2%; margin-right:10px;border-radius: 30%;"></a>
+
+        <a target="_blank" href="https://www.youtube.com/@udlaspalmas"><img 
+          src="../LND_ProyectoWeb/img/youtube.png" alt="YouTube"
+            style="width:2%; margin-right:10px; "></a>
+      </div>
+
+      <div style="flex:1; text-align:center;">
+        &copy; 2026 Todos los derechos reservados
+      </div>
+
     </form>
 </body>
 
