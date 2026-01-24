@@ -123,3 +123,10 @@ body {
     ),
     url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png) repeat;
 }
+
+.index {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
