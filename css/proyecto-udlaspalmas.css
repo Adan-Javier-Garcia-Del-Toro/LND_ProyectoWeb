@@ -186,6 +186,7 @@ main {
         color: rgb(255, 255, 255);
     }
 }
+
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     .navbar ul {
@@ -205,4 +206,21 @@ main {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.img1 {
+    background-color: rgb(207, 209, 209);
+    border-radius: 25px;
+    width: 20%;
+}
+
+.bloque-galeria{
+display: flex;
+padding: 5%;
+}
+
+.img2{
+    background-color: rgb(207, 209, 209);
+    border-radius: 25px;
+    width: 20%;
 }
