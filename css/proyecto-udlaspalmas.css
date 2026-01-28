@@ -15,10 +15,12 @@
 .navbar ul li {
     margin: 0 50px;
     text-align: center;
+    font-family: 'Pacifico';
+    font-size: 30px;
 }
 
 .navbar ul li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -66,8 +68,7 @@ main {
 
 /* Botones */
 .IniciarSesion,
-.Registrarse,
-.navbar ul li a {
+.Registrarse {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     padding: 10px 20px;
@@ -186,7 +187,7 @@ main {
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 20px;
-    font-family: 'Concert One'; 
+    font-family: 'Concert One';
     font-size: 16px;
     color: white;
 }
