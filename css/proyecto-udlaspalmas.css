@@ -1,22 +1,32 @@
 /* Navbar */
 .navbar {
-    padding: 5px;
+    padding: 5px 20px;
     background: linear-gradient(to right, #FFF94C, #004FF9);
     border-radius: 100px;
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
 }
 
 .navbar a {
-    float: left;
+    text-decoration: none;
 }
 
+/* Lista */
 .navbar ul {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
     list-style: none;
     flex: 1;
-    padding-top: 50px;
+    /* rellena todo el espacio */
+    margin: 0;
+    padding: 0;
 }
 
+/* Items */
 .navbar ul li {
     margin: 0 50px;
     text-align: center;
@@ -24,11 +34,12 @@
     font-size: 150%;
 }
 
+/* Links */
 .navbar ul li a {
     color: #000000;
-    text-decoration: none;
     font-weight: bold;
 }
+
 
 /* Body */
 body {
@@ -67,7 +78,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 460px;
+    height: 550px;
     position: relative;
 }
 
@@ -92,7 +103,6 @@ main {
     width: 50%;
     background: rgba(0, 0, 0, 0.6);
     padding: 25px;
-    border-radius: 20px;
     text-align: justify;
     box-sizing: border-box;
 }
@@ -248,6 +258,37 @@ h2 {
     margin-top: 0;
 }
 
+#Noticias img {
+    width: 20%;
+    background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
+    color: rgb(0, 0, 0);
+    padding: 40px 40px;
+    border-radius: 15px;
+
+}
+
+#Noticias .noticia {
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.noticia img {
+    margin-bottom: 10px;
+    display: flex;
+}
+#Noticias {
+    color: white;
+    border-radius: 10px;
+}
+
+.noticias-container {
+    padding: 1rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 576px) {
     .columna {
         width: 50%;
@@ -279,5 +320,18 @@ h2 {
 
     .redes {
         margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .noticias-container {
+        padding: 1rem;
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia img {
+        height: 180px;
     }
 }
