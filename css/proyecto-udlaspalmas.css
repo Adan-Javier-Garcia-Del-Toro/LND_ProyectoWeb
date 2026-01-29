@@ -5,18 +5,23 @@
     border-radius: 100px;
 }
 
+.navbar a {
+    float: left;
+}
+
 .navbar ul {
     display: flex;
     justify-content: left;
     list-style: none;
     flex: 1;
+    padding-top: 50px;
 }
 
 .navbar ul li {
     margin: 0 50px;
     text-align: center;
     font-family: 'Pacifico';
-    font-size: 30px;
+    font-size: 150%;
 }
 
 .navbar ul li a {
