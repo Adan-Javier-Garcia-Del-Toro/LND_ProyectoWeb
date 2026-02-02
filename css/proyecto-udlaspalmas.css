@@ -5,6 +5,7 @@
     border-radius: 100px;
     display: flex;
     align-items: center;
+    margin: 20px;
     /* centra verticalmente */
 }
 
@@ -31,7 +32,7 @@
     margin: 0 50px;
     text-align: center;
     font-family: 'Pacifico';
-    font-size: 150%;
+    font-size: 145%;
 }
 
 /* Links */
@@ -287,6 +288,27 @@ h2 {
     gap: 30px;
     padding: 20px 0;
 }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 40%;
+      font-size: 2rem;
+    }
 
 @media screen and (min-width: 576px) {
     .columna {
