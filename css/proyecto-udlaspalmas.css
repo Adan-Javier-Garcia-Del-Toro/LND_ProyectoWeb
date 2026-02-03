@@ -262,24 +262,36 @@ h2 {
     margin-top: 0;
 }
 
-#Noticias img {
-    width: 100%;
+hr {
+  height: 10px;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+.noticia {
     background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
-    color: rgb(0, 0, 0);
-    padding: 60px;
     border-radius: 15px;
-    height: 150px;
+    text-align: center;
+}
+
+.noticia img {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 15px;
+    height: auto;
 }
 
 #Noticias .noticia {
-    margin: 100px;
+    margin: 50px;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
 }
 
 #Noticias {
     color: white;
     border-radius: 10px;
+    width: 60%;
 }
 
 .noticias-container {
@@ -289,26 +301,26 @@ h2 {
     padding: 20px 0;
 }
 
-    .video-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -1;
-      object-fit: cover;
-    }
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
 
-    .contenido {
-      position: relative;
-      z-index: 1;
-      color: white;
-      text-align: center;
-      top: 40%;
-      font-size: 2rem;
-    }
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+    font-size: 2rem;
+}
 
 @media screen and (min-width: 576px) {
     .columna {
