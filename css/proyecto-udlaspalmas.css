@@ -262,36 +262,38 @@ h2 {
     margin-top: 0;
 }
 
+h1 {
+    padding: 50px;
+}
+
 hr {
-  height: 10px;
-  width: 50%;
-  background-color: rgb(255, 255, 255);
+    height: 10px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
 }
 
 .noticia {
     background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
     border-radius: 15px;
-    text-align: center;
+    padding: 10px;
 }
 
 .noticia img {
-    width: 50%;
-    color: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 15px;
-    height: auto;
+    width: 96%;
+    padding: 10px;
+    height: 380px;
 }
 
 #Noticias .noticia {
     margin: 50px;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
 }
 
 #Noticias {
     color: white;
     border-radius: 10px;
-    width: 60%;
+    width: 30%;
 }
 
 .noticias-container {
@@ -366,5 +368,6 @@ hr {
 
     .noticia img {
         height: 180px;
+        border-radius: 15px;
     }
 }
