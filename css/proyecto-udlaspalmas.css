@@ -73,6 +73,10 @@ main {
     font-size: medium;
 }
 
+a {
+    color: white;
+}
+
 /* Sección Historia */
 #Historia {
     background-image: url("https://imgs.search.brave.com/hRjbso2Qoy99nbNIWTHSFOG_EmI3A9LmnkiYJkhXm-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lc3Rh/dGljb3MtY2RuLnBy/ZW5zYWliZXJpY2Eu/ZXMvY2xpcC84YjZk/MmRlNy1kYmNmLTRk/MDctYmYzMi02YjYx/ZDdiZWYxNWJfMTYt/OS1hc3BlY3QtcmF0/aW9fZGVmYXVsdF8w/LmpwZw");
@@ -299,8 +303,34 @@ hr {
 .noticias-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
     padding: 20px 0;
+}
+
+.disafio-parrafo {
+    text-align: center;
+}
+
+.adios-lukovic {
+    text-align: center;
+}
+
+.cuartos-juvenil {
+    text-align: center;
+}
+
+.mas-informacion {
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 70px;
+    align-self: center;
+    font-size: larger;
+}
+
+.mas-informacion a {
+    text-align: center;
 }
 
 .video-bg {
