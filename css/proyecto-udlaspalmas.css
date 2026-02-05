@@ -51,7 +51,7 @@ body {
     background-color: #000000;
 }
 
-/* Logo */
+/* Logos */
 .logo {
     width: 95px;
     animation: girarX 2s linear infinite;
@@ -59,11 +59,15 @@ body {
 }
 
 .logo1 {
-    width: 10%;
-    display: block;
-    background-color: white;
-    padding: 10px;
+    width: 15%;
+    background: linear-gradient(to right, #FFF94C, #004FF9);
     border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.logo-partidos {
+    width: 5%;
 }
 
 @keyframes girarX {
@@ -83,6 +87,39 @@ main {
 
 a {
     color: white;
+}
+
+#Partidos table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: linear-gradient(to right, rgba(0, 79, 249, 0.7), rgba(255, 249, 76, 0.7));
+    font-family: 'Alexandria';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Partidos th,
+#Partidos td {
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+}
+
+.partidos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-partidos {
+    width: 40px;
+    height: 50px;
+    margin: 0 15px;
+    vertical-align: middle;
 }
 
 /* Sección Historia */
@@ -270,8 +307,9 @@ a {
 }
 
 h2 {
-    text-align: center;
-    margin-top: 0;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 50px;
 }
 
 h1 {
@@ -315,6 +353,14 @@ hr {
     padding: 20px 0;
 }
 
+video {
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    padding: 200px;
+}
+
 .disafio-parrafo {
     text-align: center;
 }
@@ -345,18 +391,21 @@ hr {
     display: flex;
     align-items: center;
     gap: 12px;
-    background: #222;
-    padding: 15px 20px;
-    border-radius: 40px;
+    background: #2c2c2c;
+    padding: 10px;
+    border-radius: 50px;
+    width: 15%;
+    border: 5px double;
+    border-color: rgb(255, 249, 76, 0.7) rgb(0, 79, 249, 0.7);
 }
 
 button {
-    background: #1db954;
+    background: yellow;
     border: none;
-    color: black;
+    color: rgb(0, 119, 255);
     font-size: 18px;
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 30px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -376,7 +425,7 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
-    background: #1db954;
+    background: linear-gradient(to right, rgb(255, 247, 0), rgb(0, 100, 249));
     border-radius: 50%;
     cursor: pointer;
 }
@@ -392,6 +441,7 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: -1;
     object-fit: cover;
 }
+
 
 .contenido {
     position: relative;

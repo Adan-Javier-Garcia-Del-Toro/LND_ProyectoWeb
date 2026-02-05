@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/proyecto-udlaspalmas.css">
   <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="img/UD Las Palmas - Logo.ico">
 </head>
 
@@ -15,7 +16,6 @@
   <header>
     <section id="Inicio">
       <nav class="navbar"> <a href="#Inicio"><img src="img/UD Las Palmas - Logo.png" class="logo"></a>
-
         <ul>
           <li><a href="#Inicio">Inicio</a></li>
           <li><a href="#Historia">Historia</a></li>
@@ -120,48 +120,49 @@
           <p>Una tarde memorable en la que Las Palmas derrotó al Barça como visitante, destacando grandes actuaciones de
             sus figuras.</p>
         </div>
-        <h2>Himno Oficial</h2>
-        <audio id="audio">
-          <source src="audio/himno-oficial-ud-las-palmas.m4a">
-          Tu navegador no soporta audio.
-        </audio>
-        <div class="player">
-          <img src="img/UD Las Palmas - Logo.png" class="logo1">
-          <button id="playBtn">▶</button>
-          <input type="range" id="volumen" min="0" max="100" value="50">
-        </div>
-        
-        <script>
-          const audio = document.getElementById("audio");
-          const playBtn = document.getElementById("playBtn");
-          const volumen = document.getElementById("volumen");
+      </div>
+      <h2>Himno Oficial</h2>
+      <audio id="audio">
+        <source src="audio/himno-oficial-ud-las-palmas.m4a">
+        Tu navegador no soporta audio.
+      </audio>
+      <div class="player">
+        <img src="img/UD Las Palmas - Logo.png" class="logo1">
+        <button id="playBtn">▶</button>
+        <input type="range" id="volumen" min="0" max="100" value="50">
+      </div>
 
-          // volumen inicial
+      <script>
+        const audio = document.getElementById("audio");
+        const playBtn = document.getElementById("playBtn");
+        const volumen = document.getElementById("volumen");
+
+        // volumen inicial
+        audio.volume = volumen.value / 100;
+
+        // play / pause
+        playBtn.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+            playBtn.textContent = "⏸";
+          } else {
+            audio.pause();
+            playBtn.textContent = "▶";
+          }
+        });
+
+        // cambiar volumen
+        volumen.addEventListener("input", () => {
           audio.volume = volumen.value / 100;
+        });
 
-          // play / pause
-          playBtn.addEventListener("click", () => {
-            if (audio.paused) {
-              audio.play();
-              playBtn.textContent = "⏸";
-            } else {
-              audio.pause();
-              playBtn.textContent = "▶";
-            }
-          });
-
-          // cambiar volumen
-          volumen.addEventListener("input", () => {
-            audio.volume = volumen.value / 100;
-          });
-
-        </script>
+      </script>
       </div>
 
       <section id="Noticias">
-        <video src="videos/UD-Las-Palmas-67-años-de-Historia.mp4" autoplay="true" muted="true" loop="true"></video>
         <div class="overlay"></div>
         <div class="noticias-container">
+          <video src="videos/UD-Las-Palmas-67-años-de-Historia.mp4" autoplay="true" muted="true" loop="true"></video>
           <h1>Noticias Recientes</h1>
           <div class="noticia">
             <img src="img/luis-garcia.png" alt="Noticia 1" class="zoom">
@@ -234,7 +235,44 @@
                 target="_blank" class="mas-informacion">Pulse aquí para más información</a>
             </p>
           </div>
+        </div>
+      </section>
+      <section id="Partidos">
+        <h1>Próximos Partidos</h1>
+        <div class="partidos-container">
+          <table>
+            <tr>
+              <th>Fechas</th>
+              <th>Partidos</th>
+            </tr>
 
+            <tr>
+              <td>04/01/2026</td>
+              <td>
+                <img src="img/zaragoza.png" class="logo-partidos">
+                ZAR 1 | 2 LPA
+                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+              </td>
+            </tr>
+
+            <tr>
+              <td>15/02/2026</td>
+              <td>
+                <img src="img/mirandes.png" class="logo-partidos">
+                Mirandés VS UD Las Palmas
+                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+              </td>
+            </tr>
+
+            <tr>
+              <td>21/02/2026</td>
+              <td>
+                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+                UD Las Palmas VS Burgos
+                <img src="img/burgos.png" class="logo-partidos">
+              </td>
+            </tr>
+          </table>
         </div>
       </section>
 
@@ -376,7 +414,6 @@
           </div>
         </div>
       </section>
-
 
 
       <!-- Footer -->
