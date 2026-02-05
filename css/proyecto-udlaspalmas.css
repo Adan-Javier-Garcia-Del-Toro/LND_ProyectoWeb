@@ -58,6 +58,14 @@ body {
     transform-style: preserve-3d;
 }
 
+.logo1 {
+    width: 10%;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
 @keyframes girarX {
     from {
         transform: rotateY(0deg);
@@ -331,6 +339,46 @@ hr {
 
 .mas-informacion a {
     text-align: center;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #222;
+    padding: 15px 20px;
+    border-radius: 40px;
+}
+
+button {
+    background: #1db954;
+    border: none;
+    color: black;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Slider */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 120px;
+    height: 5px;
+    background: #555;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Barra activa */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .video-bg {

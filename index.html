@@ -120,10 +120,46 @@
           <p>Una tarde memorable en la que Las Palmas derrotó al Barça como visitante, destacando grandes actuaciones de
             sus figuras.</p>
         </div>
+        <h2>Himno Oficial</h2>
+        <audio id="audio">
+          <source src="audio/himno-oficial-ud-las-palmas.m4a">
+          Tu navegador no soporta audio.
+        </audio>
+        <div class="player">
+          <img src="img/UD Las Palmas - Logo.png" class="logo1">
+          <button id="playBtn">▶</button>
+          <input type="range" id="volumen" min="0" max="100" value="50">
+        </div>
+        
+        <script>
+          const audio = document.getElementById("audio");
+          const playBtn = document.getElementById("playBtn");
+          const volumen = document.getElementById("volumen");
+
+          // volumen inicial
+          audio.volume = volumen.value / 100;
+
+          // play / pause
+          playBtn.addEventListener("click", () => {
+            if (audio.paused) {
+              audio.play();
+              playBtn.textContent = "⏸";
+            } else {
+              audio.pause();
+              playBtn.textContent = "▶";
+            }
+          });
+
+          // cambiar volumen
+          volumen.addEventListener("input", () => {
+            audio.volume = volumen.value / 100;
+          });
+
+        </script>
       </div>
 
       <section id="Noticias">
-                  <video src="videos/UD-Las-Palmas-67-años-de-Historia.mp4" autoplay="true" muted="true" loop="true"></video>
+        <video src="videos/UD-Las-Palmas-67-años-de-Historia.mp4" autoplay="true" muted="true" loop="true"></video>
         <div class="overlay"></div>
         <div class="noticias-container">
           <h1>Noticias Recientes</h1>
