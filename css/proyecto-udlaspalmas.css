@@ -150,8 +150,7 @@ table tr:nth-child(odd):hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 550px;
-    position: relative;
+    height: 775px;
 }
 
 /* Botones */
@@ -195,8 +194,7 @@ table tr:nth-child(odd):hover {
     width: 150%;
     height: auto;
     border-radius: 20px;
-    padding: 20px;
-    margin: 0 auto;
+    margin: 10%;
 }
 
 .bloque p {
