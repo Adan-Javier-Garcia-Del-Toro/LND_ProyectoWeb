@@ -89,6 +89,27 @@ a {
     color: white;
 }
 
+/* Pares */
+table tr:nth-child(even) {
+    background: linear-gradient(to right, #004FF9,  #dfd702);
+}
+
+table tr:nth-child(even):hover {
+    color: black;
+    background-color: #007700;
+}
+
+/* Impares */
+table tr:nth-child(odd) {
+    background: linear-gradient(to right, #004FF9,  #dfd702);
+}
+
+table tr:nth-child(odd):hover {
+    color: black;
+    background: linear-gradient(to right, #004FF9, #dfd702);
+}
+
+
 #Partidos table {
     width: 60%;
     margin: 0 auto;
@@ -104,7 +125,8 @@ a {
 
 #Partidos th,
 #Partidos td {
-    border: 2px solid white;
+    border: 5px solid;
+    border-color: white;
     padding: 5px;
     text-align: center;
 }
@@ -116,8 +138,8 @@ a {
 }
 
 .logo-partidos {
-    width: 40px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin: 0 15px;
     vertical-align: middle;
 }
@@ -285,6 +307,29 @@ a {
     object-fit: cover;
 }
 
+.tabla-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+}
+
+thead {
+    background: #005bbb;
+    color: white;
+}
+
 /* Responsive */
 @media screen and (max-width: 600px) {
     .navbar ul {
@@ -307,8 +352,6 @@ a {
 }
 
 h2 {
-    text-align: justify;
-    margin-top: 20px;
     padding: 50px;
 }
 
