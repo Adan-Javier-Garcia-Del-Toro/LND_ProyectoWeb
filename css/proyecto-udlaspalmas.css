@@ -203,8 +203,7 @@ table tr:nth-child(odd):hover {
     width: 150%;
     height: auto;
     border-radius: 20px;
-    padding: 20px;
-    margin: 0 auto;
+    margin: 10%;
 }
 
 .bloque p {
@@ -466,6 +465,7 @@ button {
 /* Slider */
 input[type="range"] {
     -webkit-appearance: none;
+    appearance: none;
     width: 120px;
     height: 5px;
     background: #555;
