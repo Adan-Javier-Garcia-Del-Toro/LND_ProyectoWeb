@@ -5,7 +5,7 @@
     border-radius: 100px;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 25px;
     /* centra verticalmente */
 }
 
@@ -33,6 +33,7 @@
     text-align: center;
     font-family: 'Pacifico';
     font-size: 110%;
+    padding: 10px;
 }
 
 /* Links */
@@ -91,6 +92,29 @@ a {
     color: white;
 }
 
+.search-inline {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-inline--input {
+    width: 30%;
+    padding: 10px 10px 10px 45px;
+    border: 5px ridge;
+    border-color: rgba(255, 249, 76, 0.7) rgba(0, 79, 249, 0.7);
+    border-radius: 10px;
+    outline: none;
+    color: #000000;
+    font-size: px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1' viewBox='0 0 22 22' %3E%3Cpath d='M14.92 14.07l6.04 6.04c.23.24.23.62 0 .86-.24.23-.62.23-.85 0l-6.03-6.04C12.57 16.22 10.63 17 8.5 17 3.8 17 0 13.2 0 8.5S3.8 0 8.5 0 17 3.8 17 8.5c0 2.13-.78 4.08-2.08 5.57zM8.5 16c4.14 0 7.5-3.36 7.5-7.5C16 4.36 12.64 1 8.5 1 4.36 1 1 4.36 1 8.5 1 12.64 4.36 16 8.5 16z' fill='black' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 1.675em;
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 /* Pares */
 table tr:nth-child(even) {
     background: linear-gradient(to right, #004FF9, #dfd702);
@@ -107,7 +131,7 @@ table tr:nth-child(odd) {
 }
 
 table tr:nth-child(odd):hover {
-    color: black;
+    color: rgb(255, 255, 255);
     background: linear-gradient(to right, #004FF9, #dfd702);
 }
 
@@ -139,15 +163,99 @@ table tr:nth-child(odd):hover {
     margin-top: 20px;
 }
 
+/* Botón hamburguesa */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: white;
+    z-index: 9999;
+}
+
+/* Sidebar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    font-family: 'Pacifico';
+}
+
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.sidenav a:hover {
+    background: #ffffff;
+    color: black;
+}
+
+/* Botón cerrar */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+}
+
+/* para pantallas mas pequñas cuando la altura es menos de 450px , cambiar el stilo de la barra lateral (menos el relleno y el tamaño de fuente mas pequeño) */
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+#Clasificación table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: linear-gradient(to right, rgba(0, 79, 249, 0.7), rgba(255, 249, 76, 0.7));
+    font-family: 'Alexandria';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Clasificación th,
+#Clasificación td {
+    border: 5px solid;
+    border-color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+
 .clasificacion-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 .logo-partidos {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin: 0 15px;
     vertical-align: middle;
 }
@@ -370,6 +478,14 @@ hr {
     background-color: rgb(255, 255, 255);
 }
 
+.himno-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 🔥 centra horizontal */
+    text-align: center;
+}
+
 #Noticias {
     color: white;
     border-radius: 10px;
@@ -394,7 +510,7 @@ hr {
     margin: 50px auto;
     /* centra la caja */
     text-align: justify;
-    width: 90%;
+    width: 50%;
 }
 
 .noticia {
