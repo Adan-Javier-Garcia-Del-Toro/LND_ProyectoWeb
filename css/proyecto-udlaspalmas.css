@@ -154,11 +154,9 @@ table tr:nth-child(odd):hover {
 
 /* Sección Historia */
 #Historia {
-    background-image: url("https://imgs.search.brave.com/hRjbso2Qoy99nbNIWTHSFOG_EmI3A9LmnkiYJkhXm-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lc3Rh/dGljb3MtY2RuLnBy/ZW5zYWliZXJpY2Eu/ZXMvY2xpcC84YjZk/MmRlNy1kYmNmLTRk/MDctYmYzMi02YjYx/ZDdiZWYxNWJfMTYt/OS1hc3BlY3QtcmF0/aW9fZGVmYXVsdF8w/LmpwZw");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 775px;
     position: relative;
 }
 
@@ -372,10 +370,36 @@ hr {
     background-color: rgb(255, 255, 255);
 }
 
+#Noticias {
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
+    /* 🔥 CENTRA EL BLOQUE */
+}
+
+.noticias-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 🔥 centra horizontal */
+    text-align: center;
+}
+
+#Noticias .noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centra el contenido */
+    margin: 50px auto;
+    /* centra la caja */
+    text-align: justify;
+    width: 90%;
+}
+
 .noticia {
     background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
     border-radius: 15px;
-    margin: 20px;
     padding: 10px;
 }
 
@@ -385,32 +409,28 @@ hr {
     height: 380px;
 }
 
-#Noticias .noticia {
-    margin: 50px;
-    flex-direction: column;
-    text-align: justify;
-    display: flex;
+
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
 }
 
-#Noticias {
-    color: white;
-    border-radius: 10px;
-    width: 30%;
-}
-
-.noticias-container {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px 0;
-    display: block;
-}
-
-video {
-    background-position: center;
-    background-size: cover;
-    height: 550px;
-    position: relative;
-    padding: 200px;
+#video_pattern {
+    background: #fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .disafio-parrafo {
@@ -481,18 +501,6 @@ input[type="range"]::-webkit-slider-thumb {
     background: linear-gradient(to right, rgb(255, 247, 0), rgb(0, 100, 249));
     border-radius: 50%;
     cursor: pointer;
-}
-
-.video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    object-fit: cover;
 }
 
 
