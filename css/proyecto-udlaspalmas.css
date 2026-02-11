@@ -30,10 +30,10 @@
 
 /* Items */
 .navbar ul li {
-    margin: 0 56px;
+    margin: 0 50px;
     text-align: center;
     font-family: 'Pacifico';
-    font-size: 100%;
+    font-size: 115%;
     padding: 10px;
 }
 
@@ -298,7 +298,7 @@ table tr:nth-child(odd):hover {
 .ul-columna {
     background-color: black;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
     color: white;
 }
 
@@ -329,20 +329,21 @@ table tr:nth-child(odd):hover {
 .foto-historica {
     display: flex;
     flex-wrap: wrap;
-    gap: 300px;
+    gap: 250px;
     padding: 20px;
 }
 
 .bloque {
-    width: 245px;
+    width: 14%;
     text-align: justify;
 }
 
 .bloque img {
-    width: 150%;
+    width: 140%;
     height: auto;
     border-radius: 20px;
     margin: 10%;
+    gap: 0;
 }
 
 .bloque p {
@@ -424,7 +425,7 @@ table tr:nth-child(odd):hover {
     flex-wrap: wrap;
     padding: 20px;
     font-family: 'Concert One';
-    font-size: 16px;
+    font-size: 100%;
     color: white;
 }
 
@@ -476,25 +477,11 @@ thead {
     color: white;
 }
 
-/* Responsive */
-@media screen and (max-width: 600px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .contenedor {
-        flex-direction: column;
-    }
-
-    .columna {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+/* CopyRight */
+.copy {
+    flex: 1;
+    text-align: center;
+    color: white;
 }
 
 h2 {
@@ -699,50 +686,163 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 2rem;
 }
 
-@media screen and (min-width: 576px) {
-    .columna {
-        width: 50%;
-    }
+/*Responsives */
+/* MÓVIL PEQUEÑO (0px → 480px) */
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  .navbar ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  /* HISTORIA */
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* PARTIDOS HISTÓRICOS */
+  .foto-historica {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* TABLAS */
+  table {
+    font-size: 10px;
+  }
+  .logo-partidos {
+    width: 18px;
+  }
+
+  /* GALERÍA */
+  .bloque-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* HIMNO */
+  .player {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
 }
 
-@media screen and (min-width: 993px) {
-    .columna {
-        width: 33.33%;
-    }
+/* MÓVIL NORMAL (481px → 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .navbar ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto-historica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .bloque-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-@media screen and (orientation: landscape) {
-    header {
-        background-color: black;
-        color: white;
-    }
+/* TABLET (769px → 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navbar ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .foto-historica {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .bloque-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+/* LAPTOP (1025px → 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
 
-    .contacto {
-        max-width: 100%;
-    }
+  .navbar ul {
+    display: flex;
+  }
+  .menu-btn {
+    display: none;
+  }
 
-    .redes {
-        margin-top: 15px;
-    }
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .foto-historica {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .bloque-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
 }
 
-@media (max-width: 768px) {
-    .noticias-container {
-        padding: 1rem;
-        gap: 1.5rem;
-        display: flex;
-        flex-direction: column;
-    }
+/* estilos móviles primero */
 
-    .noticia img {
-        height: 180px;
-        border-radius: 15px;
-    }
-}
+@media (min-width: 768px) { /* tablet */ }
+@media (min-width: 1024px) { /* laptop */ }
+@media (min-width: 1440px) { /* escritorio */ }
