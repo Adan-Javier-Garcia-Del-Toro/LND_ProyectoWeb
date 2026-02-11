@@ -9,6 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="img/UD Las Palmas - Logo.ico">
 </head>
 
@@ -58,40 +59,8 @@
           });
         });
       </script>
-      <script>function buscar() {
-          let texto = document.getElementById("buscador").value.toLowerCase();
-          let parrafos = document.querySelectorAll("p");
 
-          parrafos.forEach(p => {
-            p.style.background = p.textContent.toLowerCase().includes(texto) ? "yellow" : "";
-          });
-        }
-      </script>
-      <script>function buscarPagina() {
-          const input = document.getElementById("buscador").value.toLowerCase();
-          const resultados = document.getElementById("resultados");
-          resultados.innerHTML = "";
 
-          if (input === "") return;
-
-          // Seleccionamos todos los elementos de texto que quieras buscar
-          const elementos = document.querySelectorAll("h1, h2, h3, p, li");
-
-          elementos.forEach(el => {
-            const texto = el.textContent.toLowerCase();
-            if (texto.includes(input)) {
-              const li = document.createElement("li");
-              li.textContent = el.textContent.slice(0, 50) + "..."; // mostrar un fragmento
-              li.onclick = () => {
-                el.scrollIntoView({ behavior: "smooth", block: "center" });
-                el.style.background = "yellow"; // resalta el elemento encontrado
-                setTimeout(() => el.style.background = "", 1500);
-              };
-              resultados.appendChild(li);
-            }
-          });
-        }
-      </script>
       <nav class="navbar"> <a href="#Inicio"><img src="img/UD Las Palmas - Logo.png" class="logo"></a>
         <ul>
           <li><a href="#Inicio">Inicio</a></li>
@@ -104,712 +73,713 @@
           <li><a href="registrarse.html" target="_blank" class="Registrarse">Registrarse</a></li>
         </ul>
       </nav>
-      <div class="search-inline">
-        <input name="txtSearch" class="search-inline--input" placeholder="Buscar">
-      </div>
     </section>
   </header>
-
   </div>
   <main>
-    <video id="video_background" autoplay muted loop playsinline>
-      <source src="videos/UD-Las-Palmas-67-años-de-Historia.mp4" type="video/mp4">
-    </video>
-
-    <div class="video_pattern"></div>
-
     <section id="Historia">
-      <div class="contenedor">
-        <div class="columna">
-          <h2>Datos Generales</h2>
-          <ul>
-            <li>Nombre: Unión Deportiva Las Palmas, S. A. D.</li>
-            <br>
-            <li>Apodo(s): La Unión Deportiva, Pío-pío, también se le apodaba como el "Tractor amarillo" debido a un
-              himno popular de la temporada 1992-93</li>
-            <br>
-            <li>Presidente: Miguel Ángel Ramírez</li>
-            <br>
-            <li>Pdte. de honor: Germán Dévora</li>
-            <br>
-            <li>Dir. deportivo: Luis Helguera</li>
-            <br>
-            <li>Entrenador: Luis García</li>
-          </ul>
-        </div>
-        <div class="columna">
-          <h2>Fundación</h2>
-          <p>Unión Deportiva Las Palmas fue fundada el 22 de agosto de 1949, fruto de la fusión de cinco clubes
-            grancanarios: CD Gran Canaria, Atlético Club (antes CD Santa Catalina), Real Club Victoria, Arenas Club y
-            Marino FC. Su creación respondió a la necesidad de unificar el fútbol canario para acceder a competiciones
-            nacionales, tras la aprobación de la Federación Española de Fútbol el 6 de junio de 1949.</p>
-        </div>
-        <div class="columna">
-          <h2>Primera Temporada</h2>
-          <p>En su primera temporada, la UD Las Palmas logró el ascenso a Segunda División (1950-51), y en la
-            siguiente,
-            1951-1952, ascendió a Primera División en apenas dos temporadas, un récord histórico que ningún otro equipo
-            ha igualado.</p>
-        </div>
-        <div class="columna">
-          <h2>Primera etapa en 1ª División</h2>
-          <p>La primera etapa en Primera División fue efímera (1951-1952), pero tras un descenso, el club regresó en
-            1953-1954
-            y comenzó una época dorada que duró 19 temporadas consecutivas en la máxima categoría, desde 1964 hasta
-            1983.
-            Durante esta etapa, destacaron jugadores como Germán Dévora, Juan Guedes y Tonono, y el equipo alcanzó su
-            mejor clasificación histórica: subcampeón de La Liga en 1968-1969, tras una intensa lucha con Real Madrid y
-            FC
-            Barcelona.</p>
-        </div>
-        <div class="columna">
-          <h2>Otras Competiciones</h2>
-          <p>Además, la UD Las Palmas participó en competiciones europeas, como la Copa de Ferias (1969) y la Copa de la
-            UEFA (1972).
-            El club también ha sido campeón de Segunda División en 1953-1954, 1963-1964, 1984-1985 y 1999-1900, y ha
-            logrado el
-            subcampeonato en otras temporadas.</p>
-        </div>
-        <div class="columna">
-          <h2>Últimos años</h2>
-          <p>En los últimos años, la UD Las Palmas ha mostrado una capacidad de resurgimiento constante: tras descender
-            en
-            2018-19, logró el ascenso en 2022-23 tras ganar la promoción de Segunda División.
-            En la temporada 2023-2024, regresó a Primera División, aunque finalizó en 16.º lugar, y en 2024-2025 se
-            encuentra
-            en 19.º puesto, luchando por mantenerse en la categoría.</p>
-        </div>
-      </div>
-
-      <h2>Partidos Históricos</h2>
-      <div class="foto-historica">
-        <div class="bloque">
-          <img src="img/LasPalmas-Málaga-1950.png" class="zoom" alt="Las Palmas vs Málaga">
-          <p>🔹 UD Las Palmas 4-1 Málaga — 8 de julio de 1951</p>
-          <p>Ascenso histórico a Primera División en el Estadio Insular tras dominar la temporada desde su fundación.
-          </p>
-        </div>
-
-        <div class="bloque">
-          <img src="img/Tonono-1200-sm9vcs.jpg" class="zoom" alt="Tonono">
-          <p>🔹 UD Las Palmas 3-0 Atlético de Madrid — 9 de febrero de 1958</p>
-          <p>Una de las victorias más sensacionales del club amarillo sobre un gran rival en su mejor época.</p>
-        </div>
-
-        <div class="bloque">
-          <img src="img/Las-Palmas-4-3-Real-Madrid.jpeg" class="zoom" alt="Las Palmas vs Real Madrid">
-          <p>🔹 UD Las Palmas 4-3 Real Madrid — 29 de marzo de 1986</p>
-          <p>Partido épico que quedó grabado en la memoria de la afición por la emoción y remontada.</p>
-        </div>
-
-        <div class="bloque">
-          <img src="img/historia.jpg" class="zoom" alt="Las Palmas vs Barcelona">
-          <p>🔹 FC Barcelona 1-2 UD Las Palmas — histórica victoria en Montjuïc</p>
-          <p>Una tarde memorable en la que Las Palmas derrotó al Barça como visitante, destacando grandes actuaciones de
-            sus figuras.</p>
-        </div>
-      </div>
-      <section id="Himno">
-        <div class="himno-container">
-          <h1>Himno Oficial</h1>
-          <audio id="audio">
-            <source src="audio/himno-oficial-ud-las-palmas.m4a">
-            Tu navegador no soporta audio.
-          </audio>
-          <div class="player">
-            <img src="img/UD Las Palmas - Logo.png" class="logo1">
-            <button id="playBtn">▶</button>
-            <input type="range" id="volumen" min="0" max="100" value="50">
+      <video class="video-historia" autoplay muted loop>
+        <source src="videos/UD-Las-Palmas-67-años-de-Historia.mp4" type="video/mp4">
+      </video>
+      <section id="sect1" class="sect">
+        <div class="contenedor">
+          <div class="columna">
+            <h2 class="h2-columna">Datos Generales</h2>
+            <ul>
+              <li class="li-columna"><u>Nombre:</u> Unión Deportiva Las Palmas, S. A. D.</li>
+              <br>
+              <li class="li-columna"><u>Apodo(s):</u> La Unión Deportiva, Pío-pío, también se le apodaba como el
+                "Tractor amarillo" debido a un
+                himno popular de la temporada 1992-93</li>
+              <br>
+              <li class="li-columna"><u>Presidente:</u> Miguel Ángel Ramírez</li>
+              <br>
+              <li class="li-columna"><u>Pdte. de honor:</u> Germán Dévora</li>
+              <br>
+              <li class="li-columna"><u>Dir. deportivo:</u> Luis Helguera</li>
+              <br>
+              <li class="li-columna"><u>Entrenador:</u> Luis García</li>
+            </ul>
           </div>
-        </div>
-        <script>
-          const audio = document.getElementById("audio");
-          const playBtn = document.getElementById("playBtn");
-          const volumen = document.getElementById("volumen");
+          <div class="columna">
+            <h2 class="h2-columna">Fundación</h2>
+            <p class="p-columna">Unión Deportiva Las Palmas fue fundada el 22 de agosto de 1949, fruto de la fusión de
+              cinco clubes
+              grancanarios: CD Gran Canaria, Atlético Club (antes CD Santa Catalina), Real Club Victoria, Arenas Club y
+              Marino FC. Su creación respondió a la necesidad de unificar el fútbol canario para acceder a competiciones
+              nacionales, tras la aprobación de la Federación Española de Fútbol el 6 de junio de 1949.</p>
+            <h2 class="h2-columna">Otras Competiciones</h2>
+            <p class="p-columna">Además, la UD Las Palmas participó en competiciones europeas, como la Copa de Ferias
+              (1969) y la Copa de la
+              UEFA (1972).
+              El club también ha sido campeón de Segunda División en 1953-1954, 1963-1964, 1984-1985 y 1999-1900, y ha
+              logrado el
+              subcampeonato en otras temporadas.</p>
+          </div>
+          <div class="columna">
+            <h2 class="h2-columna">Primera Temporada</h2>
+            <p class="p-columna">En su primera temporada, la UD Las Palmas logró el ascenso a Segunda División
+              (1950-51), y en la
+              siguiente,
+              1951-1952, ascendió a Primera División en apenas dos temporadas, un récord histórico que ningún otro
+              equipo
+              ha igualado.</p>
+            <h2 class="h2-columna">Primera etapa en 1ª División</h2>
+            <p class="p-columna">La primera etapa en Primera División fue efímera (1951-1952), pero tras un descenso, el
+              club regresó en
+              1953-1954
+              y comenzó una época dorada que duró 19 temporadas consecutivas en la máxima categoría, desde 1964 hasta
+              1983.
+              Durante esta etapa, destacaron jugadores como Germán Dévora, Juan Guedes y Tonono, y el equipo alcanzó su
+              mejor clasificación histórica: subcampeón de La Liga en 1968-1969, tras una intensa lucha con Real Madrid
+              y
+              FC
+              Barcelona.</p>
+          </div>
 
-          // volumen inicial
+
+          <div class="columna">
+            <h2 class="h2-columna">Últimos años</h2>
+            <p class="p-columna">En los últimos años, la UD Las Palmas ha mostrado una capacidad de resurgimiento
+              constante: tras descender
+              en
+              2018-19, logró el ascenso en 2022-23 tras ganar la promoción de Segunda División.
+              En la temporada 2023-2024, regresó a Primera División, aunque finalizó en 16.º lugar, y en 2024-2025 se
+              encuentra
+              en 19.º puesto, luchando por mantenerse en la categoría.</p>
+          </div>
+      </section>
+    </section>
+
+    <h1>Partidos Históricos</h1>
+    <div class="foto-historica">
+      <div class="bloque">
+        <img src="img/LasPalmas-Málaga-1950.png" class="zoom" alt="Las Palmas vs Málaga">
+        <p>🔹 UD Las Palmas 4-1 Málaga — 8 de julio de 1951</p>
+        <p>Ascenso histórico a Primera División en el Estadio Insular tras dominar la temporada desde su fundación.
+        </p>
+      </div>
+
+      <div class="bloque">
+        <img src="img/Tonono-1200-sm9vcs.jpg" class="zoom" alt="Tonono">
+        <p>🔹 UD Las Palmas 3-0 Atlético de Madrid — 9 de febrero de 1958</p>
+        <p>Una de las victorias más sensacionales del club amarillo sobre un gran rival en su mejor época.</p>
+      </div>
+
+      <div class="bloque">
+        <img src="img/Las-Palmas-4-3-Real-Madrid.jpeg" class="zoom" alt="Las Palmas vs Real Madrid">
+        <p>🔹 UD Las Palmas 4-3 Real Madrid — 29 de marzo de 1986</p>
+        <p>Partido épico que quedó grabado en la memoria de la afición por la emoción y remontada.</p>
+      </div>
+
+      <div class="bloque">
+        <img src="img/historia.jpg" class="zoom" alt="Las Palmas vs Barcelona">
+        <p>🔹 FC Barcelona 1-2 UD Las Palmas — histórica victoria en Montjuïc</p>
+        <p>Una tarde memorable en la que Las Palmas derrotó al Barça como visitante, destacando grandes actuaciones de
+          sus figuras.</p>
+      </div>
+    </div>
+    <section id="Himno">
+      <div class="himno-container">
+        <h1>Himno Oficial</h1>
+        <audio id="audio">
+          <source src="audio/himno-oficial-ud-las-palmas.m4a">
+          Tu navegador no soporta audio.
+        </audio>
+        <div class="player">
+          <img src="img/UD Las Palmas - Logo.png" class="logo1">
+          <button id="playBtn">▶</button>
+          <input type="range" id="volumen" min="0" max="100" value="50">
+        </div>
+      </div>
+      <script>
+        const audio = document.getElementById("audio");
+        const playBtn = document.getElementById("playBtn");
+        const volumen = document.getElementById("volumen");
+
+        // volumen inicial
+        audio.volume = volumen.value / 100;
+
+        // play / pause
+        playBtn.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+            playBtn.textContent = "⏸";
+          } else {
+            audio.pause();
+            playBtn.textContent = "▶";
+          }
+        });
+
+        // cambiar volumen
+        volumen.addEventListener("input", () => {
           audio.volume = volumen.value / 100;
+        });
 
-          // play / pause
-          playBtn.addEventListener("click", () => {
-            if (audio.paused) {
-              audio.play();
-              playBtn.textContent = "⏸";
-            } else {
-              audio.pause();
-              playBtn.textContent = "▶";
-            }
-          });
-
-          // cambiar volumen
-          volumen.addEventListener("input", () => {
-            audio.volume = volumen.value / 100;
-          });
-
-        </script>
+      </script>
+      </div>
+    </section>
+    <section id="Noticias">
+      <div class="noticias-container">
+        <h1>Noticias Recientes</h1>
+        <div class="noticia">
+          <!-- iniciar código de feedwind -->
+          <!-- start feedwind code -->
+          <!-- start feedwind code -->
+          <!-- start feedwind code -->
+          <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Cargando..."
+            data-fw-param="177104/"></script> <!-- end feedwind code -->
         </div>
-      </section>
-      <section id="Noticias">
-        <div class="noticias-container">
-          <h1>Noticias Recientes</h1>
-          <div class="noticia">
-            <!-- iniciar código de feedwind -->
-            <!-- start feedwind code -->
-            <!-- start feedwind code -->
-            <!-- start feedwind code -->
-            <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Cargando..."
-              data-fw-param="177104/"></script> <!-- end feedwind code -->
-          </div>
-      </section>
-      <section id="Partidos">
-        <h1>Calendario de Partidos</h1>
-        <div class="partidos-container">
-          <table>
-            <tr>
-              <th>Fechas</th>
-              <th>Partidos</th>
-            </tr>
+    </section>
+    <section id="Partidos">
+      <h1>Calendario de Partidos</h1>
+      <div class="partidos-container">
+        <table>
+          <tr>
+            <th>Fechas</th>
+            <th>Partidos</th>
+          </tr>
 
-            <tr>
-              <td>04/01/2026</td>
-              <td>
-                <img src="img/zaragoza.png" class="logo-partidos">
-                ZAR 1 - 2 LPA
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>04/01/2026</td>
+            <td>
+              <img src="img/zaragoza.png" class="logo-partidos">
+              ZAR 1 - 2 LPA
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>10/01/2026</td>
-              <td>
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-                LPA 1 - 1 RCD
-                <img src="img/deportivo.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>10/01/2026</td>
+            <td>
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+              LPA 1 - 1 RCD
+              <img src="img/deportivo.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>18/01/2026</td>
-              <td>
-                <img src="img/racing.png" class="logo-partidos">
-                RAC 4 - 1 LPA
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>18/01/2026</td>
+            <td>
+              <img src="img/racing.png" class="logo-partidos">
+              RAC 4 - 1 LPA
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>24/01/2026</td>
-              <td>
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-                LPA 1 - 2 CCF
-                <img src="img/cordoba.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>24/01/2026</td>
+            <td>
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+              LPA 1 - 2 CCF
+              <img src="img/cordoba.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>30/01/2026</td>
-              <td>
-                <img src="img/real-sociedad-b.png" class="logo-partidos">
-                RSB 1 - 1 LPA
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>30/01/2026</td>
+            <td>
+              <img src="img/real-sociedad-b.png" class="logo-partidos">
+              RSB 1 - 1 LPA
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>7/02/2026</td>
-              <td>
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-                LPA 0 - 0 BUR
-                <img src="img/burgos.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>7/02/2026</td>
+            <td>
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+              LPA 0 - 0 BUR
+              <img src="img/burgos.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>15/02/2026</td>
-              <td>
-                <img src="img/mirandes.png" class="logo-partidos">
-                MIR 13:00 LPA
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-              </td>
-            </tr>
+          <tr>
+            <td>15/02/2026</td>
+            <td>
+              <img src="img/mirandes.png" class="logo-partidos">
+              MIR 13:00 LPA
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+            </td>
+          </tr>
 
-            <tr>
-              <td>21/02/2026</td>
-              <td>
-                <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
-                LPA 20:00 CAS
-                <img src="img/castellon.png" class="logo-partidos">
-              </td>
-            </tr>
-          </table>
+          <tr>
+            <td>21/02/2026</td>
+            <td>
+              <img src="img/UD Las Palmas - Logo.png" class="logo-partidos">
+              LPA 20:00 CAS
+              <img src="img/castellon.png" class="logo-partidos">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="Clasificación">
+      <h1>Clasificación</h1>
+      <h2>LALIGA Hypermotion 2025/2026</h2>
+      <div class="clasificacion-container">
+        <table>
+          <tr>
+            <td>Posición</td>
+            <td>Escudo</td>
+            <td>Nombre</td>
+            <td>PTS</td>
+            <td>PJ</td>
+            <td>G</td>
+            <td>E</td>
+            <td>P</td>
+            <td>GF</td>
+            <td>GC</td>
+            <td>DIF</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td><img src="img/racing.png" class="logo-partidos"></td>
+            <td>Racing</td>
+            <td>47</td>
+            <td>25</td>
+            <td>14</td>
+            <td>5</td>
+            <td>6</td>
+            <td>51</td>
+            <td>33</td>
+            <td>18</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td><img src="img/castellon.png" class="logo-partidos"></td>
+            <td>Castellón</td>
+            <td>45</td>
+            <td>25</td>
+            <td>13</td>
+            <td>6</td>
+            <td>6</td>
+            <td>42</td>
+            <td>25</td>
+            <td>+17</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td><img src="img/deportivo.png" class="logo-partidos"></td>
+            <td>Deportivo</td>
+            <td>43</td>
+            <td>25</td>
+            <td>12</td>
+            <td>7</td>
+            <td>6</td>
+            <td>40</td>
+            <td>27</td>
+            <td>+13</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td><img src="img/almeria.png" class="logo-partidos"></td>
+            <td>Almería</td>
+            <td>42</td>
+            <td>25</td>
+            <td>12</td>
+            <td>6</td>
+            <td>7</td>
+            <td>47</td>
+            <td>36</td>
+            <td>+11</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td><img src="img/malaga.png" class="logo-partidos">🔺</td>
+            <td>Málaga</td>
+            <td>41</td>
+            <td>25</td>
+            <td>12</td>
+            <td>5</td>
+            <td>8</td>
+            <td>38</td>
+            <td>29</td>
+            <td>+9</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td><img src="img/UD Las Palmas - Logo.png" class="logo-partidos">🔻</td>
+            <td>UD Las Palmas</td>
+            <td>40</td>
+            <td>25</td>
+            <td>10</td>
+            <td>10</td>
+            <td>5</td>
+            <td>29</td>
+            <td>20</td>
+            <td>+9</td>
+          </tr>
+
+
+          <tr>
+            <td>7</td>
+            <td><img src="img/burgos.png" class="logo-partidos">🔺</td>
+            <td>Burgos</td>
+            <td>39</td>
+            <td>25</td>
+            <td>11</td>
+            <td>6</td>
+            <td>8</td>
+            <td>28</td>
+            <td>24</td>
+            <td>+4</td>
+          </tr>
+
+
+          <tr>
+            <td>8</td>
+            <td><img src="img/sporting-de-guijon.png" class="logo-partidos">🔺</td>
+            <td>Real Sporting</td>
+            <td>39</td>
+            <td>25</td>
+            <td>12</td>
+            <td>3</td>
+            <td>10</td>
+            <td>35</td>
+            <td>33</td>
+            <td>+2</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td><img src="img/cordoba.png" class="logo-partidos">🔻</td>
+            <td>Córdoba</td>
+            <td>38</td>
+            <td>24</td>
+            <td>10</td>
+            <td>8</td>
+            <td>6</td>
+            <td>32</td>
+            <td>27</td>
+            <td>+5</td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td><img src="img/ceuta.png" class="logo-partidos"></td>
+            <td>A. D. Ceuta</td>
+            <td>35</td>
+            <td>24</td>
+            <td>10</td>
+            <td>5</td>
+            <td>9</td>
+            <td>30</td>
+            <td>34</td>
+            <td>-4</td>
+          </tr>
+
+          <tr>
+            <td>11</td>
+            <td><img src="img/cadiz.png" class="logo-partidos"></td>
+            <td>Cádiz</td>
+            <td>34</td>
+            <td>25</td>
+            <td>9</td>
+            <td>7</td>
+            <td>9</td>
+            <td>27</td>
+            <td>29</td>
+            <td>-2</td>
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td><img src="img/albacete.png" class="logo-partidos"></td>
+            <td>Albacete</td>
+            <td>33</td>
+            <td>25</td>
+            <td>9</td>
+            <td>6</td>
+            <td>10</td>
+            <td>31</td>
+            <td>36</td>
+            <td>-5</td>
+          </tr>
+
+          <tr>
+            <td>13</td>
+            <td><img src="img/leganes.png" class="logo-partidos">🔺</td>
+            <td>Leganés</td>
+            <td>32</td>
+            <td>25</td>
+            <td>8</td>
+            <td>8</td>
+            <td>9</td>
+            <td>27</td>
+            <td>25</td>
+            <td>+2</td>
+          </tr>
+
+          <tr>
+            <td>14</td>
+            <td><img src="img/eibar.png" class="logo-partidos">🔻</td>
+            <td>Eibar</td>
+            <td>32</td>
+            <td>25</td>
+            <td>8</td>
+            <td>8</td>
+            <td>9</td>
+            <td>26</td>
+            <td>27</td>
+            <td>-1</td>
+          </tr>
+
+          <tr>
+            <td>15</td>
+            <td><img src="img/granada.png" class="logo-partidos"></td>
+            <td>Granada</td>
+            <td>29</td>
+            <td>25</td>
+            <td>6</td>
+            <td>11</td>
+            <td>8</td>
+            <td>26</td>
+            <td>29</td>
+            <td>-3</td>
+          </tr>
+
+          <tr>
+            <td>16</td>
+            <td><img src="img/andorra.png" class="logo-partidos"></td>
+            <td>Andorra</td>
+            <td>29</td>
+            <td>25</td>
+            <td>7</td>
+            <td>8</td>
+            <td>10</td>
+            <td>27</td>
+            <td>35</td>
+            <td>-8</td>
+          </tr>
+
+          <tr>
+            <td>17</td>
+            <td><img src="img/real-sociedad-b.png" class="logo-partidos">🔺</td>
+            <td>R. Sociedad B</td>
+            <td>28</td>
+            <td>25</td>
+            <td>7</td>
+            <td>7</td>
+            <td>11</td>
+            <td>32</td>
+            <td>35</td>
+            <td>-3</td>
+          </tr>
+
+          <tr>
+            <td>18</td>
+            <td><img src="img/valladolid.png" class="logo-partidos">🔻</td>
+            <td>Real Valladolid</td>
+            <td>28</td>
+            <td>25</td>
+            <td>7</td>
+            <td>7</td>
+            <td>11</td>
+            <td>25</td>
+            <td>31</td>
+            <td>-6</td>
+          </tr>
+
+          <tr>
+            <td>19</td>
+            <td><img src="img/huesca.png" class="logo-partidos">🔻</td>
+            <td>Huesca</td>
+            <td>27</td>
+            <td>25</td>
+            <td>7</td>
+            <td>6</td>
+            <td>12</td>
+            <td>23</td>
+            <td>34</td>
+            <td>-11</td>
+          </tr>
+
+          <tr>
+            <td>20</td>
+            <td><img src="img/cultural-leonesa.png" class="logo-partidos"></td>
+            <td>Cultural Leonesa</td>
+            <td>25</td>
+            <td>25</td>
+            <td>7</td>
+            <td>4</td>
+            <td>14</td>
+            <td>26</td>
+            <td>40</td>
+            <td>-14</td>
+          </tr>
+
+          <tr>
+            <td>21</td>
+            <td><img src="img/real-zaragoza.png" class="logo-partidos"></td>
+            <td>Real Zaragoza</td>
+            <td>23</td>
+            <td>25</td>
+            <td>5</td>
+            <td>8</td>
+            <td>12</td>
+            <td>22</td>
+            <td>38</td>
+            <td>-16</td>
+          </tr>
+
+          <tr>
+            <td>22</td>
+            <td><img src="img/mirandes.png" class="logo-partidos"></td>
+            <td>Mirandés</td>
+            <td>20</td>
+            <td>25</td>
+            <td>5</td>
+            <td>5</td>
+            <td>15</td>
+            <td>25</td>
+            <td>42</td>
+            <td>-17</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="Galería">
+      <h1>Plantilla del equipo</h1>
+      <h2>Porteros</h2>
+      <div class="bloque-galeria porteros lightbox">
+        <div class="jugador">
+          <img src="img/dinko-horkas.png" class="zoom1">
+          <h3>Dinko Horkaš</h3>
         </div>
-      </section>
-      <section id="Clasificación">
-        <h1>Clasificación</h1>
-        <h2>LALIGA Hypermotion 2025/2026</h2>
-        <div class="clasificacion-container">
-          <table>
-            <tr>
-              <td>Posición</td>
-              <td>Escudo</td>
-              <td>Nombre</td>
-              <td>PTS</td>
-              <td>PJ</td>
-              <td>G</td>
-              <td>E</td>
-              <td>P</td>
-              <td>GF</td>
-              <td>GC</td>
-              <td>DIF</td>
-            </tr>
-
-            <tr>
-              <td>1</td>
-              <td><img src="img/racing.png" class="logo-partidos"></td>
-              <td>Racing</td>
-              <td>47</td>
-              <td>25</td>
-              <td>14</td>
-              <td>5</td>
-              <td>6</td>
-              <td>51</td>
-              <td>33</td>
-              <td>18</td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td><img src="img/castellon.png" class="logo-partidos"></td>
-              <td>Castellón</td>
-              <td>45</td>
-              <td>25</td>
-              <td>13</td>
-              <td>6</td>
-              <td>6</td>
-              <td>42</td>
-              <td>25</td>
-              <td>+17</td>
-            </tr>
-
-            <tr>
-              <td>3</td>
-              <td><img src="img/deportivo.png" class="logo-partidos"></td>
-              <td>Deportivo</td>
-              <td>43</td>
-              <td>25</td>
-              <td>12</td>
-              <td>7</td>
-              <td>6</td>
-              <td>40</td>
-              <td>27</td>
-              <td>+13</td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td><img src="img/almeria.png" class="logo-partidos"></td>
-              <td>Almería</td>
-              <td>42</td>
-              <td>25</td>
-              <td>12</td>
-              <td>6</td>
-              <td>7</td>
-              <td>47</td>
-              <td>36</td>
-              <td>+11</td>
-            </tr>
-
-            <tr>
-              <td>5</td>
-              <td><img src="img/malaga.png" class="logo-partidos">🔺</td>
-              <td>Málaga</td>
-              <td>41</td>
-              <td>25</td>
-              <td>12</td>
-              <td>5</td>
-              <td>8</td>
-              <td>38</td>
-              <td>29</td>
-              <td>+9</td>
-            </tr>
-
-            <tr>
-              <td>6</td>
-              <td><img src="img/UD Las Palmas - Logo.png" class="logo-partidos">🔻</td>
-              <td>UD Las Palmas</td>
-              <td>40</td>
-              <td>25</td>
-              <td>10</td>
-              <td>10</td>
-              <td>5</td>
-              <td>29</td>
-              <td>20</td>
-              <td>+9</td>
-            </tr>
-
-
-            <tr>
-              <td>7</td>
-              <td><img src="img/burgos.png" class="logo-partidos">🔺</td>
-              <td>Burgos</td>
-              <td>39</td>
-              <td>25</td>
-              <td>11</td>
-              <td>6</td>
-              <td>8</td>
-              <td>28</td>
-              <td>24</td>
-              <td>+4</td>
-            </tr>
-
-
-            <tr>
-              <td>8</td>
-              <td><img src="img/sporting-de-guijon.png" class="logo-partidos">🔺</td>
-              <td>Real Sporting</td>
-              <td>39</td>
-              <td>25</td>
-              <td>12</td>
-              <td>3</td>
-              <td>10</td>
-              <td>35</td>
-              <td>33</td>
-              <td>+2</td>
-            </tr>
-
-            <tr>
-              <td>9</td>
-              <td><img src="img/cordoba.png" class="logo-partidos">🔻</td>
-              <td>Córdoba</td>
-              <td>38</td>
-              <td>24</td>
-              <td>10</td>
-              <td>8</td>
-              <td>6</td>
-              <td>32</td>
-              <td>27</td>
-              <td>+5</td>
-            </tr>
-
-            <tr>
-              <td>10</td>
-              <td><img src="img/ceuta.png" class="logo-partidos"></td>
-              <td>A. D. Ceuta</td>
-              <td>35</td>
-              <td>24</td>
-              <td>10</td>
-              <td>5</td>
-              <td>9</td>
-              <td>30</td>
-              <td>34</td>
-              <td>-4</td>
-            </tr>
-
-            <tr>
-              <td>11</td>
-              <td><img src="img/cadiz.png" class="logo-partidos"></td>
-              <td>Cádiz</td>
-              <td>34</td>
-              <td>25</td>
-              <td>9</td>
-              <td>7</td>
-              <td>9</td>
-              <td>27</td>
-              <td>29</td>
-              <td>-2</td>
-            </tr>
-
-            <tr>
-              <td>12</td>
-              <td><img src="img/albacete.png" class="logo-partidos"></td>
-              <td>Albacete</td>
-              <td>33</td>
-              <td>25</td>
-              <td>9</td>
-              <td>6</td>
-              <td>10</td>
-              <td>31</td>
-              <td>36</td>
-              <td>-5</td>
-            </tr>
-
-            <tr>
-              <td>13</td>
-              <td><img src="img/leganes.png" class="logo-partidos">🔺</td>
-              <td>Leganés</td>
-              <td>32</td>
-              <td>25</td>
-              <td>8</td>
-              <td>8</td>
-              <td>9</td>
-              <td>27</td>
-              <td>25</td>
-              <td>+2</td>
-            </tr>
-
-            <tr>
-              <td>14</td>
-              <td><img src="img/eibar.png" class="logo-partidos">🔻</td>
-              <td>Eibar</td>
-              <td>32</td>
-              <td>25</td>
-              <td>8</td>
-              <td>8</td>
-              <td>9</td>
-              <td>26</td>
-              <td>27</td>
-              <td>-1</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td><img src="img/granada.png" class="logo-partidos"></td>
-              <td>Granada</td>
-              <td>29</td>
-              <td>25</td>
-              <td>6</td>
-              <td>11</td>
-              <td>8</td>
-              <td>26</td>
-              <td>29</td>
-              <td>-3</td>
-            </tr>
-
-            <tr>
-              <td>16</td>
-              <td><img src="img/andorra.png" class="logo-partidos"></td>
-              <td>Andorra</td>
-              <td>29</td>
-              <td>25</td>
-              <td>7</td>
-              <td>8</td>
-              <td>10</td>
-              <td>27</td>
-              <td>35</td>
-              <td>-8</td>
-            </tr>
-
-            <tr>
-              <td>17</td>
-              <td><img src="img/real-sociedad-b.png" class="logo-partidos">🔺</td>
-              <td>R. Sociedad B</td>
-              <td>28</td>
-              <td>25</td>
-              <td>7</td>
-              <td>7</td>
-              <td>11</td>
-              <td>32</td>
-              <td>35</td>
-              <td>-3</td>
-            </tr>
-
-            <tr>
-              <td>18</td>
-              <td><img src="img/valladolid.png" class="logo-partidos">🔻</td>
-              <td>Real Valladolid</td>
-              <td>28</td>
-              <td>25</td>
-              <td>7</td>
-              <td>7</td>
-              <td>11</td>
-              <td>25</td>
-              <td>31</td>
-              <td>-6</td>
-            </tr>
-
-            <tr>
-              <td>19</td>
-              <td><img src="img/huesca.png" class="logo-partidos">🔻</td>
-              <td>Huesca</td>
-              <td>27</td>
-              <td>25</td>
-              <td>7</td>
-              <td>6</td>
-              <td>12</td>
-              <td>23</td>
-              <td>34</td>
-              <td>-11</td>
-            </tr>
-
-            <tr>
-              <td>20</td>
-              <td><img src="img/cultural-leonesa.png" class="logo-partidos"></td>
-              <td>Cultural Leonesa</td>
-              <td>25</td>
-              <td>25</td>
-              <td>7</td>
-              <td>4</td>
-              <td>14</td>
-              <td>26</td>
-              <td>40</td>
-              <td>-14</td>
-            </tr>
-
-            <tr>
-              <td>21</td>
-              <td><img src="img/real-zaragoza.png" class="logo-partidos"></td>
-              <td>Real Zaragoza</td>
-              <td>23</td>
-              <td>25</td>
-              <td>5</td>
-              <td>8</td>
-              <td>12</td>
-              <td>22</td>
-              <td>38</td>
-              <td>-16</td>
-            </tr>
-
-            <tr>
-              <td>22</td>
-              <td><img src="img/mirandes.png" class="logo-partidos"></td>
-              <td>Mirandés</td>
-              <td>20</td>
-              <td>25</td>
-              <td>5</td>
-              <td>5</td>
-              <td>15</td>
-              <td>25</td>
-              <td>42</td>
-              <td>-17</td>
-            </tr>
-          </table>
+        <div class="jugador">
+          <img src="img/j.caro.png" class="zoom1">
+          <h3>José Antonio Caro Díaz</h3>
         </div>
-      </section>
-
-      <section id="Galería">
-        <h1>Plantilla del equipo</h1>
-        <h2>Porteros</h2>
-        <div class="bloque-galeria porteros lightbox">
-          <div class="jugador">
-            <img src="img/dinko-horkas.png" class="zoom1">
-            <h3>Dinko Horkaš</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/j.caro.png" class="zoom1">
-            <h3>José Antonio Caro Díaz</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/a.suarez.png" class="zoom1">
-            <h3>Adrián Suárez Ortega</h3>
-          </div>
+        <div class="jugador">
+          <img src="img/a.suarez.png" class="zoom1">
+          <h3>Adrián Suárez Ortega</h3>
         </div>
+      </div>
 
-        <h2>Defensas</h2>
-        <div class="bloque-galeria">
-          <div class="jugador">
-            <img src="img/marvin.png" class="zoom1">
-            <h3>Marvin Park</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/mika.marmol.png" class="zoom1">
-            <h3>Mika Mármol Medina</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/alex-suarez.png" class="zoom1">
-            <h3>José Alexander Suárez Suárez (Alex Suárez)</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/e.clemente.png" class="zoom1">
-            <h3>Enrique Clemente Maza</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/s.barcia.png" class="zoom1">
-            <h3>Sergio Barcia Laranxeira</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/herzog.png" class="zoom1">
-            <h3>Juan Manuel Herzog González (Herzog)</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/cristian.png" class="zoom1">
-            <h3>Cristian Gutiérrez Vizcaíno</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/v.pezzolesi.png" class="zoom1">
-            <h3>Valentín Pezzolesi</h3>
-          </div>
+      <h2>Defensas</h2>
+      <div class="bloque-galeria">
+        <div class="jugador">
+          <img src="img/marvin.png" class="zoom1">
+          <h3>Marvin Park</h3>
         </div>
+        <div class="jugador">
+          <img src="img/mika.marmol.png" class="zoom1">
+          <h3>Mika Mármol Medina</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/alex-suarez.png" class="zoom1">
+          <h3>José Alexander Suárez Suárez (Alex Suárez)</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/e.clemente.png" class="zoom1">
+          <h3>Enrique Clemente Maza</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/s.barcia.png" class="zoom1">
+          <h3>Sergio Barcia Laranxeira</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/herzog.png" class="zoom1">
+          <h3>Juan Manuel Herzog González (Herzog)</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/cristian.png" class="zoom1">
+          <h3>Cristian Gutiérrez Vizcaíno</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/v.pezzolesi.png" class="zoom1">
+          <h3>Valentín Pezzolesi</h3>
+        </div>
+      </div>
 
-        <h2>Centrocampistas</h2>
-        <div class="bloque-galeria">
-          <div class="jugador">
-            <img src="img/benedetti.png" class="zoom1">
-            <h3>Nicolás Benedetti Roa</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/ivan-gil.png" class="zoom1">
-            <h3>Iván Gil Calero</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/recoba.png" class="zoom1">
-            <h3>Jeremía Recoba Perrone</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/loiodice.png" class="zoom1">
-            <h3>Enzo Lilian Marin Loiodice</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/manu-fuster.png" class="zoom1">
-            <h3>Manuel Fuster Lázaro</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/amatucci.png" class="zoom1">
-            <h3>Lorenzo Amatucci</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/viti-rozada.png" class="zoom1">
-            <h3>Víctor Álvarez Rozada (Viti)</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/kirian.png" class="zoom1">
-            <h3>Kirian Rodríguez Concepción</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/jonathan-viera.png" class="zoom1">
-            <h3>Jonathan Viera Ramos</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/iñaki.png" class="zoom1">
-            <h3>Iñaki González Zambrano (Iñaki)</h3>
-          </div>
+      <h2>Centrocampistas</h2>
+      <div class="bloque-galeria">
+        <div class="jugador">
+          <img src="img/benedetti.png" class="zoom1">
+          <h3>Nicolás Benedetti Roa</h3>
         </div>
+        <div class="jugador">
+          <img src="img/ivan-gil.png" class="zoom1">
+          <h3>Iván Gil Calero</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/recoba.png" class="zoom1">
+          <h3>Jeremía Recoba Perrone</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/loiodice.png" class="zoom1">
+          <h3>Enzo Lilian Marin Loiodice</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/manu-fuster.png" class="zoom1">
+          <h3>Manuel Fuster Lázaro</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/amatucci.png" class="zoom1">
+          <h3>Lorenzo Amatucci</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/viti-rozada.png" class="zoom1">
+          <h3>Víctor Álvarez Rozada (Viti)</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/kirian.png" class="zoom1">
+          <h3>Kirian Rodríguez Concepción</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/jonathan-viera.png" class="zoom1">
+          <h3>Jonathan Viera Ramos</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/iñaki.png" class="zoom1">
+          <h3>Iñaki González Zambrano (Iñaki)</h3>
+        </div>
+      </div>
 
-        <h2>Extremos</h2>
-        <div class="bloque-galeria">
-          <div class="jugador">
-            <img src="img/ale-garcia.png" class="zoom1">
-            <h3>Pedro Alejandro García Mejías (Ale García)</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/pejiño.png" class="zoom1">
-            <h3>Francisco Jesús Crespo García (Pejiño)</h3>
-          </div>
+      <h2>Extremos</h2>
+      <div class="bloque-galeria">
+        <div class="jugador">
+          <img src="img/ale-garcia.png" class="zoom1">
+          <h3>Pedro Alejandro García Mejías (Ale García)</h3>
         </div>
+        <div class="jugador">
+          <img src="img/pejiño.png" class="zoom1">
+          <h3>Francisco Jesús Crespo García (Pejiño)</h3>
+        </div>
+      </div>
 
-        <h2>Delanteros</h2>
-        <div class="bloque-galeria">
-          <div class="jugador">
-            <img src="img/jese.png" class="zoom1" <a href="img/jese.png">
-            <h3>Jesé Rodríguez Ruiz</h3></a>
-          </div>
-          <div class="jugador">
-            <img src="img/miyashiro.png" class="zoom1">
-            <h3>Taisei Miyashiro</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/sandro.png" class="zoom1">
-            <h3>Sandro Ramírez Castillo</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/estanis.png" class="zoom1">
-            <h3>Estanislau Pedrola Fortuny (Estanis)</h3>
-          </div>
-          <div class="jugador">
-            <img src="img/iker-bravo.png" class="zoom1">
-            <h3>Iker Bravo Solanilla</h3>
-          </div>
+      <h2>Delanteros</h2>
+      <div class="bloque-galeria">
+        <div class="jugador">
+          <img src="img/jese.png" class="zoom1" <a href="img/jese.png">
+          <h3>Jesé Rodríguez Ruiz</h3></a>
         </div>
-      </section>
+        <div class="jugador">
+          <img src="img/miyashiro.png" class="zoom1">
+          <h3>Taisei Miyashiro</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/sandro.png" class="zoom1">
+          <h3>Sandro Ramírez Castillo</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/estanis.png" class="zoom1">
+          <h3>Estanislau Pedrola Fortuny (Estanis)</h3>
+        </div>
+        <div class="jugador">
+          <img src="img/iker-bravo.png" class="zoom1">
+          <h3>Iker Bravo Solanilla</h3>
+        </div>
+      </div>
+    </section>
 
   </main>
   <!-- Footer -->

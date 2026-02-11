@@ -27,9 +27,10 @@
     padding: 0;
 }
 
+
 /* Items */
 .navbar ul li {
-    margin: 0 40px;
+    margin: 0 56px;
     text-align: center;
     font-family: 'Pacifico';
     font-size: 100%;
@@ -283,7 +284,37 @@ table tr:nth-child(odd):hover {
 .contenedor {
     display: flex;
     color: white;
-    flex-wrap: wrap;
+}
+
+.li-columna {
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.ul-columna {
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+}
+
+.h2-columna {
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+}
+
+.p-columna {
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
 }
 
 .columna {
@@ -298,7 +329,8 @@ table tr:nth-child(odd):hover {
 .foto-historica {
     display: flex;
     flex-wrap: wrap;
-    gap: 250px;
+    gap: 300px;
+    padding: 20px;
 }
 
 .bloque {
@@ -314,7 +346,7 @@ table tr:nth-child(odd):hover {
 }
 
 .bloque p {
-    font-size: 90%;
+    font-size: 125%;
     margin-top: 8px;
     width: 150%;
     padding: 20px;
@@ -361,7 +393,7 @@ table tr:nth-child(odd):hover {
 .jugador h3 {
     margin-top: 12px;
     color: white;
-    font-size: 0.95rem;
+    font-size: 22px;
 }
 
 /* Porteros */
@@ -466,10 +498,14 @@ thead {
 }
 
 h2 {
+    font-family: 'Bungee Shade';
+    font-size: 30px;
     padding: 50px;
 }
 
 h1 {
+    font-family: 'Bungee Shade';
+    font-size: 40px;
     padding: 50px;
 }
 
@@ -526,27 +562,62 @@ hr {
     height: 380px;
 }
 
+.sect {
+    width: 100%;
+    height: auto;
+}
 
-#video_background {
-    position: fixed;
+#sect1 {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.video-historia {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* CLAVE */
+    object-fit: cover;
     z-index: -1;
 }
 
-/* Si quieres overlay blanco semitransparente */
-.video_pattern {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.2); /* ajusta o quita */
-    z-index: 1;
+.buscador {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
 }
+
+#busqueda {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.buscador button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #fdd835;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buscador button:hover {
+    background: #fbc02d;
+}
+
+/* resaltado */
+.highlight {
+    background: yellow;
+    color: black;
+    padding: 2px;
+}
+
 
 .disafio-parrafo {
     text-align: center;
