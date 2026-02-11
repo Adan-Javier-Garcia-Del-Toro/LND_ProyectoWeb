@@ -29,10 +29,10 @@
 
 /* Items */
 .navbar ul li {
-    margin: 0 50px;
+    margin: 0 40px;
     text-align: center;
     font-family: 'Pacifico';
-    font-size: 110%;
+    font-size: 100%;
     padding: 10px;
 }
 
