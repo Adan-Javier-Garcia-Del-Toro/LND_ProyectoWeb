@@ -11,29 +11,28 @@
 
 .navbar a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /* Lista */
 .navbar ul {
     display: flex;
     justify-content: center;
-    /* centra horizontalmente */
     align-items: center;
-    /* centra verticalmente */
     list-style: none;
-    flex: 1;
-    /* rellena todo el espacio */
     margin: 0;
     padding: 0;
 }
 
 
+
 /* Items */
 .navbar ul li {
-    margin: 0 50px;
+    margin: 0 40px;
     text-align: center;
     font-family: 'Pacifico';
-    font-size: 115%;
+    font-size: 108%;
     padding: 10px;
 }
 
@@ -329,7 +328,7 @@ table tr:nth-child(odd):hover {
 .foto-historica {
     display: flex;
     flex-wrap: wrap;
-    gap: 250px;
+    gap: 220px;
     padding: 20px;
 }
 
@@ -690,159 +689,172 @@ input[type="range"]::-webkit-slider-thumb {
 /* MÓVIL PEQUEÑO (0px → 480px) */
 @media (max-width: 480px) {
 
-  /* NAVBAR */
-  .navbar ul {
-    display: none;
-  }
-  .menu-btn {
-    display: block;
-  }
+    /* NAVBAR */
+    .navbar ul {
+        display: none;
+    }
 
-  /* HISTORIA */
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+    .menu-btn {
+        display: block;
+    }
 
-  /* PARTIDOS HISTÓRICOS */
-  .foto-historica {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+    /* HISTORIA */
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-  /* TABLAS */
-  table {
-    font-size: 10px;
-  }
-  .logo-partidos {
-    width: 18px;
-  }
+    /* PARTIDOS HISTÓRICOS */
+    .foto-historica {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-  /* GALERÍA */
-  .bloque-galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
+    /* TABLAS */
+    table {
+        font-size: 10px;
+    }
 
-  /* HIMNO */
-  .player {
-    flex-direction: column;
-    text-align: center;
-  }
+    .logo-partidos {
+        width: 18px;
+    }
 
-  /* FOOTER */
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
+    /* GALERÍA */
+    .bloque-galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* HIMNO */
+    .player {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
 }
 
 /* MÓVIL NORMAL (481px → 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
 
-  .navbar ul {
-    display: none;
-  }
-  .menu-btn {
-    display: block;
-  }
+    .navbar ul {
+        display: none;
+    }
 
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-  }
+    .menu-btn {
+        display: block;
+    }
 
-  .foto-historica {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .bloque-galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
+    .foto-historica {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
 
-  table {
-    font-size: 12px;
-  }
+    .bloque-galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
+    table {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* TABLET (769px → 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  .navbar ul {
-    display: none;
-  }
-  .menu-btn {
-    display: block;
-  }
+    .navbar ul {
+        display: none;
+    }
 
-  .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+    .menu-btn {
+        display: block;
+    }
 
-  .foto-historica {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 
-  .bloque-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
+    .foto-historica {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 
-  table {
-    font-size: 14px;
-  }
+    .bloque-galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
 
 /* LAPTOP (1025px → 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
 
-  .navbar ul {
-    display: flex;
-  }
-  .menu-btn {
-    display: none;
-  }
+    .navbar ul {
+        display: flex;
+    }
 
-  .contenedor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+    .menu-btn {
+        display: none;
+    }
 
-  .foto-historica {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 
-  .bloque-galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-  }
+    .foto-historica {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .bloque-galeria {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
 }
 
 /* estilos móviles primero */
 
-@media (min-width: 768px) { /* tablet */ }
-@media (min-width: 1024px) { /* laptop */ }
-@media (min-width: 1440px) { /* escritorio */ }
+@media (min-width: 768px) {
+    /* tablet */
+}
+
+@media (min-width: 1024px) {
+    /* laptop */
+}
+
+@media (min-width: 1440px) {
+    /* escritorio */
+}
