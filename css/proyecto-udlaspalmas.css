@@ -64,7 +64,7 @@ body {
 .logo1 {
     width: 15%;
     background: linear-gradient(to right, #FFF94C, #004FF9);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 15px;
     margin: 10px;
 }
@@ -157,6 +157,10 @@ table tr:nth-child(odd):hover {
     text-align: center;
 }
 
+#Partidos {
+    background: -webkit-linear-gradient(#006eff, #ffee00);
+}
+
 .partidos-container {
     display: flex;
     justify-content: center;
@@ -211,19 +215,6 @@ table tr:nth-child(odd):hover {
     font-size: 40px;
 }
 
-/* para pantallas mas pequñas cuando la altura es menos de 450px , cambiar el stilo de la barra lateral (menos el relleno y el tamaño de fuente mas pequeño) */
-@media screen and (max-height:450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-
-
 #Clasificación table {
     width: 60%;
     margin: 0 auto;
@@ -244,6 +235,10 @@ table tr:nth-child(odd):hover {
     padding: 5px;
     text-align: center;
     border-radius: 15px;
+}
+
+#Clasificación {
+    background-color: #006eff;
 }
 
 .clasificacion-container {
@@ -286,33 +281,33 @@ table tr:nth-child(odd):hover {
 }
 
 .li-columna {
-    background-color: black;
+    background-color: rgb(0, 140, 255);
     border-radius: 25px;
     padding: 15px;
-    color: white;
+    color: rgb(251, 255, 0);
     font-size: 20px;
 }
 
 
 .ul-columna {
-    background-color: black;
+    background-color: rgb(0, 140, 255);
     border-radius: 25px;
     padding: 10px;
-    color: white;
+    color: rgb(251, 255, 0);
 }
 
 .h2-columna {
-    background-color: black;
+    background-color: rgb(0, 140, 255);
     border-radius: 25px;
-    padding: 15px;
-    color: white;
+    padding: 5px;
+    color: rgb(251, 255, 0);
 }
 
 .p-columna {
-    background-color: black;
+    background-color: rgb(0, 140, 255);
     border-radius: 25px;
     padding: 15px;
-    color: white;
+    color: rgb(251, 255, 0);
     font-size: 20px;
 }
 
@@ -338,8 +333,8 @@ table tr:nth-child(odd):hover {
 }
 
 .bloque img {
-    width: 140%;
-    height: auto;
+    width: 165%;
+    height: 400px;
     border-radius: 20px;
     margin: 10%;
     gap: 0;
@@ -348,8 +343,9 @@ table tr:nth-child(odd):hover {
 .bloque p {
     font-size: 125%;
     margin-top: 8px;
-    width: 150%;
-    padding: 20px;
+    width: 175%;
+    padding: 25px;
+    margin: 10px;
 }
 
 /* Zoom imágenes */
@@ -484,15 +480,17 @@ thead {
 }
 
 h2 {
-    font-family: 'Bungee Shade';
+    font-family: 'Balsamiq Sans';
     font-size: 30px;
     padding: 50px;
+    text-align: center;
 }
 
 h1 {
-    font-family: 'Bungee Shade';
+    font-family: 'Balsamiq Sans';
     font-size: 40px;
     padding: 50px;
+    text-align: center;
 }
 
 hr {
@@ -507,6 +505,7 @@ hr {
     align-items: center;
     /* 🔥 centra horizontal */
     text-align: center;
+    background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
 }
 
 #Noticias {
@@ -515,6 +514,7 @@ hr {
     margin: auto;
     width: 90%;
     /* 🔥 CENTRA EL BLOQUE */
+
 }
 
 .noticias-container {
@@ -557,8 +557,6 @@ hr {
     position: relative;
     overflow: hidden;
 }
-
-
 
 .video-historia {
     position: absolute;
@@ -634,13 +632,14 @@ hr {
 .player {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     background: #2c2c2c;
-    padding: 10px;
     border-radius: 50px;
-    width: 15%;
+    width: 25%;
     border: 5px double;
     border-color: rgb(255, 249, 76, 0.7) rgb(0, 79, 249, 0.7);
+    margin: 20px;
+    padding: 10px;
 }
 
 button {
@@ -685,176 +684,233 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 2rem;
 }
 
-/*Responsives */
-/* MÓVIL PEQUEÑO (0px → 480px) */
-@media (max-width: 480px) {
+/* ============================= */
+/* 🌍 RESPONSIVE GLOBAL */
+/* ============================= */
 
-    /* NAVBAR */
+* {
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* 📱 MÓVILES (max 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
     .navbar ul {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    /* HISTORIA */
-    .contenedor {
-        display: flex;
         flex-direction: column;
-        gap: 15px;
-    }
-
-    /* PARTIDOS HISTÓRICOS */
-    .foto-historica {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    /* TABLAS */
-    table {
-        font-size: 10px;
-    }
-
-    .logo-partidos {
-        width: 18px;
-    }
-
-    /* GALERÍA */
-    .bloque-galeria {
-        display: grid;
-        grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    /* HIMNO */
+    .navbar ul li {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    /* Logos */
+    .logo {
+        width: 70px;
+    }
+
+    .logo1 {
+        width: 80%;
+    }
+
+    /* Buscador */
+    .search-inline--input {
+        width: 100%;
+    }
+
+    /* Tablas */
+    #Partidos table,
+    #Clasificación table {
+        width: 100%;
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    /* Columnas historia */
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Galería jugadores */
+    .bloque-galeria {
+        gap: 20px;
+    }
+
+    .jugador img,
+    .portero img {
+        width: 160px;
+    }
+
+    /* Noticias */
+    #Noticias .noticia {
+        width: 95%;
+    }
+
+    .noticia img {
+        height: auto;
+    }
+
+    /* Fotos históricas */
+    .foto-historica {
+        gap: 30px;
+    }
+
+    .bloque {
+        width: 100%;
+    }
+
+    .bloque img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bloque p {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .contacto {
+        max-width: 100%;
+    }
+
+    /* Player música */
+
+
     .player {
         flex-direction: column;
-        text-align: center;
+        /* 🔥 CLAVE */
+        width: 95%;
+        padding: 15px;
+        border-radius: 25px;
     }
 
-    /* FOOTER */
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-}
 
-/* MÓVIL NORMAL (481px → 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-
-    .navbar ul {
-        display: none;
+    #playBtn {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
     }
 
-    .menu-btn {
-        display: block;
+    #playBtn1 {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
     }
 
-    .contenedor {
-        display: flex;
-        flex-direction: column;
+    #volumen {
+        width: 100%;
     }
 
-    .foto-historica {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    .bloque-galeria {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
+    #volumen1 {
+        width: 100%;
     }
 }
 
-/* TABLET (769px → 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Texto */
+h1 {
+    font-size: 26px;
+    padding: 20px;
+}
 
-    .navbar ul {
-        display: none;
+h2 {
+    font-size: 22px;
+    padding: 20px;
+}
+}
+
+@media (max-width: 768px) {
+
+    .himno-container {
+        padding: 20px 10px;
+        border-radius: 15px;
     }
 
-    .menu-btn {
-        display: block;
+    .himno-container img {
+        width: 70%;
+        max-width: 220px;
     }
 
-    .contenedor {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    .himno-container audio,
+    .himno-container iframe {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .foto-historica {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .bloque-galeria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    table {
-        font-size: 14px;
+    .himno-container h2 {
+        font-size: 22px;
     }
 }
 
-/* LAPTOP (1025px → 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
+/* ============================= */
+/* 📱 TABLETS (769px - 1024px) */
+/* ============================= */
+@media (max-width: 1024px) {
 
-    .navbar ul {
-        display: flex;
+    .navbar ul li {
+        margin: 0 15px;
     }
 
-    .menu-btn {
-        display: none;
+    #Partidos table,
+    #Clasificación table {
+        width: 90%;
     }
 
-    .contenedor {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    .columna {
+        width: 100%;
     }
 
-    .foto-historica {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    .jugador img,
+    .portero img {
+        width: 180px;
     }
 
-    .bloque-galeria {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+    #Noticias .noticia {
+        width: 80%;
+    }
+
+    .player {
+        width: 40%;
     }
 }
 
-/* estilos móviles primero */
+/* ============================= */
+/* 🖥️ PANTALLAS GRANDES (4K FIX) */
+/* ============================= */
+@media (min-width: 1600px) {
 
-@media (min-width: 768px) {
-    /* tablet */
-}
+    body {
+        font-size: 26px;
+    }
 
-@media (min-width: 1024px) {
-    /* laptop */
-}
+    .navbar ul li {
+        font-size: 22px;
+    }
 
-@media (min-width: 1440px) {
-    /* escritorio */
+    .jugador img,
+    .portero img {
+        width: 260px;
+    }
 }

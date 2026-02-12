@@ -9,7 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="img/UD Las Palmas - Logo.ico">
 </head>
 
@@ -192,6 +192,22 @@
           <input type="range" id="volumen" min="0" max="100" value="50">
         </div>
       </div>
+
+      <div class="himno-container">
+        <h1>Otros Himnos</h1>
+        <h2><u>Título:</u> "Amarillo es mi color"</h2>
+        <audio id="audio1">
+          <source src="audio/amarillo-es-mi-color.mp3">
+          Tu navegador no soporta audio.
+        </audio>
+        <div class="player">
+          <img src="img/UD Las Palmas - Logo.png" class="logo1">
+          <button id="playBtn1">▶</button>
+          <input type="range" id="volumen1" min="0" max="100" value="50">
+        </div>
+      </div>
+
+      </div>
       <script>
         const audio = document.getElementById("audio");
         const playBtn = document.getElementById("playBtn");
@@ -218,6 +234,31 @@
 
       </script>
       </div>
+      <script>
+        const audio1 = document.getElementById("audio1");
+        const playBtn1 = document.getElementById("playBtn1");
+        const volumen1 = document.getElementById("volumen1");
+
+        // volumen inicial
+        audio1.volume = volumen.value / 100;
+
+        // play / pause
+        playBtn1.addEventListener("click", () => {
+          if (audio.paused) {
+            audio1.play();
+            playBtn1.textContent = "⏸";
+          } else {
+            audio1.pause();
+            playBtn1.textContent = "▶";
+          }
+        });
+
+        // cambiar volumen
+        volumen1.addEventListener("input", () => {
+          audio1.volume = volumen1.value / 100;
+        });
+
+      </script>
     </section>
     <section id="Noticias">
       <div class="noticias-container">
@@ -800,21 +841,18 @@
     </div>
     <!-- Redes sociales -->
     <div class="redes">
-      <a target="_blank" href="https://www.facebook.com/udlaspalmasoficial"><img
-          src="img/facebook.png" alt="Facebook"></a>
-      <a target="_blank" href="https://www.instagram.com/udlaspalmasoficial"><img
-          src="img/instagram.png" alt="Instagram"></a>
-      <a target="_blank" href="https://www.linkedin.com/company/ud-las-palmas-sad/"><img
-          src="img/linkedin.png" alt="LinkedIn"></a>
-      <a target="_blank" href="https://www.tiktok.com/@udlp_oficial"><img src="img/icono-tiktok.png"
-          alt="TikTok"></a>
-      <a target="_blank" href="https://x.com/UDLP_Oficial"><img src="img/twitter.jpg"
-          alt="Twitter"></a>
+      <a target="_blank" href="https://www.facebook.com/udlaspalmasoficial"><img src="img/facebook.png"
+          alt="Facebook"></a>
+      <a target="_blank" href="https://www.instagram.com/udlaspalmasoficial"><img src="img/instagram.png"
+          alt="Instagram"></a>
+      <a target="_blank" href="https://www.linkedin.com/company/ud-las-palmas-sad/"><img src="img/linkedin.png"
+          alt="LinkedIn"></a>
+      <a target="_blank" href="https://www.tiktok.com/@udlp_oficial"><img src="img/icono-tiktok.png" alt="TikTok"></a>
+      <a target="_blank" href="https://x.com/UDLP_Oficial"><img src="img/twitter.jpg" alt="Twitter"></a>
       <a target="_blank"
         href="https://www.whatsapp.com/channel/0029Va3r1ug9WtBxlq7Bxm3p?j=936861&sfmc_sub=162942599&l=73_HTML&u=17207263&mid=510001041&jb=2006"><img
           src="img/whatsapp.png" alt="WhatsApp"></a>
-      <a target="_blank" href="https://www.youtube.com/@udlaspalmas"><img src="img/youtube.png"
-          alt="YouTube"></a>
+      <a target="_blank" href="https://www.youtube.com/@udlaspalmas"><img src="img/youtube.png" alt="YouTube"></a>
     </div>
   </footer>
   </div>
