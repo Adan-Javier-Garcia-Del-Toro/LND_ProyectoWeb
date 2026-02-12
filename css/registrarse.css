@@ -18,7 +18,7 @@
 }
 
 .form input {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Concert One';
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -30,7 +30,7 @@
 }
 
 .form button {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Concert One';
     text-transform: uppercase;
     outline: 0;
     background: #4CAF50;
@@ -54,6 +54,7 @@
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 12px;
+    font-family: 'Concert One';
 }
 
 .form .message a {
@@ -113,13 +114,21 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFF94C, #004FF9);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-      background:
-    linear-gradient(
-      rgba(220, 234, 237, .7),
-      rgba(220, 234, 237, .7)
-    ),
-    url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png) repeat;
+}
+
+.copy {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-family: 'Concert One';
+    font-size: 120%;
+}
+
+.index {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+    text-align: center;
 }
