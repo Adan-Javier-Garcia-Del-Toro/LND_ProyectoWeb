@@ -29,10 +29,9 @@
 
 /* Items */
 .navbar ul li {
-    margin: 0 40px;
+    margin: 0 12px;
     text-align: center;
     font-family: 'Pacifico';
-    font-size: 120%;
     padding: 30px;
 }
 
@@ -40,6 +39,7 @@
 .navbar ul li a {
     color: #000000;
     font-weight: bold;
+    font-size: 30px;
 }
 
 
