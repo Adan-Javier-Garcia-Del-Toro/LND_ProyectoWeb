@@ -73,6 +73,7 @@ body {
     width: 10%;
 }
 
+
 @keyframes girarX {
     from {
         transform: rotateY(0deg);
