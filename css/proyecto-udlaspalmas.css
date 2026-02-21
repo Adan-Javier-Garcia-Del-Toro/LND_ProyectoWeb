@@ -29,17 +29,17 @@
 
 /* Items */
 .navbar ul li {
-    margin: 0 12px;
+    margin: 18px;
     text-align: center;
     font-family: 'Pacifico';
-    padding: 33px;
+    padding: 20px;
 }
 
 /* Links */
 .navbar ul li a {
     color: #000000;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 125%;
 }
 
 
@@ -93,28 +93,6 @@ a {
     color: white;
 }
 
-.search-inline {
-    width: 100%;
-    position: relative;
-    display: flex;
-}
-
-.search-inline--input {
-    width: 30%;
-    padding: 10px 10px 10px 45px;
-    border: 5px ridge;
-    border-color: rgba(255, 249, 76, 0.7) rgba(0, 79, 249, 0.7);
-    border-radius: 10px;
-    outline: none;
-    color: #000000;
-    font-size: px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1' viewBox='0 0 22 22' %3E%3Cpath d='M14.92 14.07l6.04 6.04c.23.24.23.62 0 .86-.24.23-.62.23-.85 0l-6.03-6.04C12.57 16.22 10.63 17 8.5 17 3.8 17 0 13.2 0 8.5S3.8 0 8.5 0 17 3.8 17 8.5c0 2.13-.78 4.08-2.08 5.57zM8.5 16c4.14 0 7.5-3.36 7.5-7.5C16 4.36 12.64 1 8.5 1 4.36 1 1 4.36 1 8.5 1 12.64 4.36 16 8.5 16z' fill='black' /%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: 8px center;
-    background-size: 1.675em;
-    background: rgb(255, 255, 255);
-    font-weight: bold;
-}
 
 /* Pares */
 table tr:nth-child(even) {
@@ -123,25 +101,27 @@ table tr:nth-child(even) {
 
 table tr:nth-child(even):hover {
     color: black;
-    background-color: #007700;
 }
 
 /* Impares */
 table tr:nth-child(odd) {
-    background: linear-gradient(to right, #004FF9, #dfd702);
+    background: linear-gradient(135deg, #FFD700, #0057B8);
 }
 
 table tr:nth-child(odd):hover {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #004FF9, #dfd702);
+    background-color: #0057B8;
 }
 
+#Partidos {
+    background-color: #ffd000;
+}
 
 #Partidos table {
     width: 60%;
     margin: 0 auto;
     border-collapse: collapse;
-    background: linear-gradient(to right, rgba(0, 79, 249, 0.7), rgba(255, 249, 76, 0.7));
+    background-color: #0057B8;
     font-family: 'Alexandria';
     font-size: 20px;
     color: white;
@@ -152,20 +132,21 @@ table tr:nth-child(odd):hover {
 
 #Partidos th,
 #Partidos td {
-    border: 5px solid;
+    border: 8px solid;
     border-color: white;
     padding: 5px;
     text-align: center;
 }
 
-#Partidos {
-    background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
+.h1-calendario-partidos {
+    background-color: #036fd4;
+    color: #ffffff;
 }
 
 .partidos-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    padding: 50px;
 }
 
 /* Botón hamburguesa */
@@ -229,17 +210,21 @@ table tr:nth-child(odd):hover {
     overflow: hidden;
 }
 
+.h1-clasificacion {
+    background-color: #dbb300;
+    color: #ffffff;
+}
+
 #Clasificación th,
 #Clasificación td {
-    border: 5px solid;
+    border: 8px solid;
     border-color: white;
     padding: 5px;
     text-align: center;
-    border-radius: 15px;
 }
 
 #Clasificación {
-    background-color: #006eff;
+    background-color: #036fd4;
 }
 
 .clasificacion-container {
@@ -247,6 +232,7 @@ table tr:nth-child(odd):hover {
     justify-content: center;
     margin-top: 20px;
     text-align: center;
+    padding: 50px;
 }
 
 .logo-partidos {
@@ -282,34 +268,37 @@ table tr:nth-child(odd):hover {
 }
 
 .li-columna {
-    background-color: rgb(0, 140, 255);
+    background-color: #006cf9;
     border-radius: 25px;
     padding: 15px;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    font-family: 'Acme';
 }
 
 
 .ul-columna {
-    background-color: rgb(0, 140, 255);
+    background-color: #006cf9;
     border-radius: 25px;
     padding: 10px;
     color: rgb(255, 255, 255);
 }
 
 .h2-columna {
-    background-color: rgb(0, 140, 255);
+    background-color: #006cf9;
     border-radius: 25px;
     padding: 5px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
+    font-family: 'Autour One';
 }
 
 .p-columna {
-    background-color: rgb(0, 140, 255);
+    background-color: #006cf9;
     border-radius: 25px;
     padding: 15px;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    font-family: 'Acme';
 }
 
 .columna {
@@ -321,6 +310,13 @@ table tr:nth-child(odd):hover {
 }
 
 /* Partidos históricos */
+
+
+#Partidos-Historicos {
+    background: linear-gradient(135deg, #FFD700, #0057B8);
+
+}
+
 .foto-historica {
     display: flex;
     flex-wrap: wrap;
@@ -363,6 +359,11 @@ table tr:nth-child(odd):hover {
 }
 
 /* Galería */
+
+#Galería {
+    background-image: url(https://media.gettyimages.com/id/1413867578/es/foto/green-lawn-natural-green-background.jpg?s=612x612&w=0&k=20&c=Bz7NSYSbQo41WmV8oGL_8cIwoCYtmkKmibQETU1vGNc=);
+}
+
 .bloque-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -392,6 +393,9 @@ table tr:nth-child(odd):hover {
     margin-top: 12px;
     color: white;
     font-size: 22px;
+    background-color: green;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /* Porteros */
@@ -423,18 +427,27 @@ table tr:nth-child(odd):hover {
     padding: 20px;
     font-family: 'Concert One';
     font-size: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
+
 }
 
 .contacto {
     max-width: 60%;
     text-align: left;
     margin-bottom: 10px;
+
+}
+
+.p-contacto {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 .contacto a {
-    color: #fff;
+    color: #000000;
     text-decoration: underline;
+
 }
 
 .redes {
@@ -474,11 +487,24 @@ thead {
     color: white;
 }
 
+.h1-jugadores {
+    font-size: 250%;
+    background-color: green;
+    padding: 20px;
+}
+
+.h2-jugadores {
+    font-size: 250%;
+    background-color: green;
+    border-radius: 20px;
+    margin: 20px;
+}
+
 /* CopyRight */
 .copy {
     flex: 1;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -490,7 +516,7 @@ h2 {
 
 h1 {
     font-family: 'Balsamiq Sans';
-    font-size: 40px;
+    font-size: 150%;
     padding: 50px;
     text-align: center;
 }
@@ -508,6 +534,8 @@ hr {
     /* 🔥 centra horizontal */
     text-align: center;
     background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
+    margin: 200px;
+    border-radius: 25px;
 }
 
 #Noticias {
@@ -516,7 +544,6 @@ hr {
     margin: auto;
     width: 90%;
     /* 🔥 CENTRA EL BLOQUE */
-
 }
 
 .noticias-container {
@@ -753,6 +780,7 @@ input[type="range"]::-webkit-slider-thumb {
     /* Galería jugadores */
     .bloque-galeria {
         gap: 20px;
+        color: green;
     }
 
     .jugador img,
@@ -772,6 +800,7 @@ input[type="range"]::-webkit-slider-thumb {
     /* Fotos históricas */
     .foto-historica {
         gap: 30px;
+        background-color: #dfd702;
     }
 
     .bloque {
@@ -834,7 +863,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Texto */
 h1 {
-    font-size: 26px;
+    font-size: 40px;
     padding: 20px;
 }
 
