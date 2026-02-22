@@ -32,14 +32,14 @@
     margin: 20px;
     text-align: center;
     font-family: 'Pacifico';
-    padding: 28px;
+    padding: 10px;
 }
 
 /* Links */
 .navbar ul li a {
     color: #000000;
     font-weight: bold;
-    font-size: 160%;
+    font-size: 140%;
 }
 
 
