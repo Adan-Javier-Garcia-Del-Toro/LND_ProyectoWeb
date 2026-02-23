@@ -325,22 +325,20 @@ table tr:nth-child(odd):hover {
 }
 
 .bloque {
-    width: 16%;
+    width: 14%;
     text-align: justify;
 }
 
 .bloque img {
-    width: 150%;
+    width: 160%;
     height: 400px;
     border-radius: 20px;
-    margin: 2px;
-    gap: 0;
 }
 
 .bloque p {
     font-size: 120%;
     margin-top: 8px;
-    width: 150%;
+    width: 160%;
     padding: 25px;
 }
 
