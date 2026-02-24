@@ -21,6 +21,722 @@
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+
+/* Items */
+.navbar ul li {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Pacifico';
+    padding: 10px;
+    font-size: 92%;
+}
+
+/* Links */
+.navbar ul li a {
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/* Body */
+body {
+    font-family: 'Concert One';
+    margin: 0;
+    font-size: 22px;
+    font-size: x-large;
+    background-color: #000000;
+}
+
+/* Logos */
+.logo {
+    width: 95px;
+    animation: girarX 2s linear infinite;
+    transform-style: preserve-3d;
+    padding: 10px;
+    margin: 0px;
+}
+
+.logo1 {
+    width: 15%;
+    background: linear-gradient(to right, #FFF94C, #004FF9);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.logo-partidos {
+    width: 10%;
+}
+
+
+@keyframes girarX {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+main {
+    color: white;
+    font-size: medium;
+}
+
+a {
+    color: white;
+}
+
+
+/* Pares */
+table tr:nth-child(even) {
+    background: linear-gradient(to right, #004FF9, #dfd702);
+}
+
+table tr:nth-child(even):hover {
+    color: black;
+}
+
+/* Impares */
+table tr:nth-child(odd) {
+    background: linear-gradient(135deg, #FFD700, #0057B8);
+}
+
+table tr:nth-child(odd):hover {
+    color: rgb(255, 255, 255);
+    background-color: #0057B8;
+}
+
+#Partidos {
+    background-color: #ffd000;
+}
+
+#Partidos table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #0057B8;
+    font-family: 'Alexandria';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Partidos th,
+#Partidos td {
+    border: 8px solid;
+    border-color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.h1-calendario-partidos {
+    background-color: #036fd4;
+    color: #ffd000;
+}
+
+.partidos-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Botón hamburguesa */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: white;
+    z-index: 9999;
+}
+
+/* Sidebar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    font-family: 'Pacifico';
+}
+
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.sidenav a:hover {
+    background: #ffffff;
+    color: black;
+}
+
+/* Botón cerrar */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+}
+
+#Clasificación table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: linear-gradient(to right, rgba(0, 79, 249, 0.7), rgba(255, 249, 76, 0.7));
+    font-family: 'Alexandria';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.h1-clasificacion {
+    background-color: #ffd000;
+    color: #036fd4;
+}
+
+#Clasificación th,
+#Clasificación td {
+    border: 8px solid;
+    border-color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#Clasificación {
+    background-color: #036fd4;
+}
+
+.clasificacion-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.logo-partidos {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+/* Sección Historia */
+#Historia {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Botones */
+.IniciarSesion,
+.Registrarse {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Contenido */
+.contenedor {
+    display: flex;
+    color: white;
+}
+
+.li-columna {
+    background-color: #006cf9;
+    border-radius: 25px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Acme';
+}
+
+
+.ul-columna {
+    background-color: #006cf9;
+    border-radius: 25px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.h2-columna {
+    background-color: #006cf9;
+    border-radius: 25px;
+    padding: 5px;
+    color: #ffffff;
+    font-family: 'Autour One';
+}
+
+.p-columna {
+    background-color: #006cf9;
+    border-radius: 25px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Acme';
+}
+
+.columna {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+/* Partidos históricos */
+
+
+#Partidos-Historicos {
+    background: linear-gradient(135deg, #FFD700, #0057B8);
+
+}
+
+.foto-historica {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 220px;
+    padding: 20px;
+}
+
+.bloque {
+    width: 14%;
+    text-align: justify;
+}
+
+.bloque img {
+    width: 160%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.bloque p {
+    font-size: 120%;
+    margin-top: 8px;
+    width: 160%;
+    padding: 25px;
+}
+
+/* Zoom imágenes */
+.zoom,
+.zoom1 {
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoom:hover,
+.zoom1:hover {
+    transform: scale(1.5);
+}
+
+/* Galería */
+
+#Galería {
+    background-image: url(https://media.gettyimages.com/id/1413867578/es/foto/green-lawn-natural-green-background.jpg?s=612x612&w=0&k=20&c=Bz7NSYSbQo41WmV8oGL_8cIwoCYtmkKmibQETU1vGNc=);
+}
+
+.bloque-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 220px;
+    margin: 20px;
+    font-family: 'Alexandria';
+}
+
+.jugador img {
+    background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
+    border-radius: 25px;
+    border: 10px ridge;
+    border-color: rgba(255, 249, 76, 0.7) rgba(0, 79, 249, 0.7);
+    width: 220px;
+}
+
+.jugador h3 {
+    margin-top: 12px;
+    color: white;
+    font-size: 125%;
+    background-color: green;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/* Porteros */
+.bloque-galeria.porteros img,
+.portero img {
+    background: linear-gradient(to right, rgb(255, 57, 83), rgba(0, 79, 249, 0.7));
+    border-radius: 25px;
+    border: 10px ridge;
+    border-color: rgb(255, 57, 83) rgba(0, 79, 249, 0.7);
+    width: 220px;
+}
+
+.portero {
+    flex-direction: column;
+    align-items: center;
+}
+
+.portero h3 {
+    margin-top: 12px;
+    color: white;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: 'Concert One';
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+
+}
+
+.contacto {
+    max-width: 60%;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.p-contacto {
+    color: white;
+}
+
+.contacto a {
+    color: #ffffff;
+    text-decoration: underline;
+
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.redes a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.tabla-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+}
+
+thead {
+    background: #005bbb;
+    color: white;
+}
+
+.h1-jugadores {
+    font-size: 250%;
+    background-color: green;
+    padding: 20px;
+}
+
+.h2-jugadores {
+    font-size: 250%;
+    background-color: green;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/* CopyRight */
+.copy {
+    flex: 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: 'Balsamiq Sans';
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Balsamiq Sans';
+    font-size: 150%;
+    padding: 50px;
+    text-align: center;
+}
+
+hr {
+    height: 10px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.himno-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 🔥 centra horizontal */
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
+    margin: 200px;
+    border-radius: 25px;
+}
+
+.h2-otros-himnos {
+    font-family: 'Alexandria';
+}
+
+#Noticias {
+    background-color: #036fd4;
+    color: white;
+}
+
+.noticias-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 🔥 centra horizontal */
+    text-align: center;
+}
+
+#Noticias .noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centra el contenido */
+    margin: 50px auto;
+    /* centra la caja */
+    text-align: justify;
+    width: 50%;
+}
+
+.h1-noticias {
+    background-color: #ffd000;
+    color: #036fd4;
+    width: 100%;
+    margin: 0px;
+}
+
+.noticia {
+    background-color: #fbc02d;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.noticia img {
+    width: 96%;
+    padding: 10px;
+    height: 380px;
+}
+
+.sect {
+    width: 100%;
+    height: auto;
+}
+
+#sect1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-historia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.buscador {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+#busqueda {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.buscador button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #fdd835;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buscador button:hover {
+    background: #fbc02d;
+}
+
+/* resaltado */
+.highlight {
+    background: yellow;
+    color: black;
+    padding: 2px;
+}
+
+
+.disafio-parrafo {
+    text-align: center;
+}
+
+.adios-lukovic {
+    text-align: center;
+}
+
+.cuartos-juvenil {
+    text-align: center;
+}
+
+.mas-informacion {
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 70px;
+    align-self: center;
+    font-size: larger;
+}
+
+.mas-informacion a {
+    text-align: center;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #2c2c2c;
+    border-radius: 50px;
+    width: 25%;
+    border: 5px double;
+    border-color: rgb(255, 249, 76, 0.7) rgb(0, 79, 249, 0.7);
+    margin: 20px;
+    padding: 10px;
+}
+
+button {
+    background: yellow;
+    border: none;
+    color: rgb(0, 119, 255);
+    font-size: 18px;
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Slider */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 120px;
+    height: 5px;
+    background: #555;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Barra activa */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to right, rgb(255, 247, 0), rgb(0, 100, 249));
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+    font-size: 2rem;
+}
+
+
+/* Navbar */
+.navbar {
+    padding: 5px 10px;
+    background: linear-gradient(to right, #FFF94C, #004FF9);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    /* centra verticalmente */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Lista */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -881,76 +1597,41 @@ h2 {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+/* ===== TABLET RESPONSIVE PRO ===== */
+@media (min-width: 600px) and (max-width: 1024px) {
 
-    .himno-container {
-        padding: 20px 10px;
-        border-radius: 15px;
-    }
-
-    .himno-container img {
-        width: 70%;
-        max-width: 220px;
-    }
-
-    .himno-container audio,
-    .himno-container iframe {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         max-width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        border-radius: 0;
     }
 
-    .himno-container h2 {
-        font-size: 22px;
-    }
-}
-
-/* ============================= */
-/* 📱 TABLETS (769px - 1024px) */
-/* ============================= */
-@media (max-width: 1024px) {
-
-    .navbar ul li {
-        margin: 0 15px;
-    }
-
-    #Partidos table,
-    #Clasificación table {
-        width: 90%;
-    }
-
-    .columna {
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-    }
-
-    .jugador img,
-    .portero img {
-        width: 180px;
-    }
-
-    #Noticias .noticia {
-        width: 80%;
-    }
-
-    .player {
-        width: 40%;
-    }
-}
-
-/* ============================= */
-/* 🖥️ PANTALLAS GRANDES (4K FIX) */
-/* ============================= */
-@media (min-width: 1600px) {
-
-    body {
-        font-size: 26px;
+        max-width: 900px;
+        /* 🔥 centra bonito */
+        margin: auto;
+        padding: 0 20px;
+        gap: 12px;
     }
 
     .navbar ul li {
-        font-size: 22px;
+        padding: 6px 10px;
+        white-space: nowrap;
+        /* evita saltos raros */
     }
 
-    .jugador img,
-    .portero img {
-        width: 260px;
+    .navbar ul li a {
+        font-size: 16px;
+        text-align: center;
     }
 }
