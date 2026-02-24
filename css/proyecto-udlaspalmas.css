@@ -437,13 +437,11 @@ table tr:nth-child(odd):hover {
 }
 
 .p-contacto {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
+    color: white;
 }
 
 .contacto a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
 
 }
