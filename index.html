@@ -665,11 +665,23 @@
         </table>
       </div>
     </section>
+    <script>
+      function toggleGaleria(id, boton) {
+        const seccion = document.getElementById(id);
 
+        if (seccion.style.display === "none") {
+          seccion.style.display = "flex";
+          boton.textContent = "▲"; // mostrar
+        } else {
+          seccion.style.display = "none";
+          boton.textContent = "▼"; // ocultar
+        }
+      }
+    </script>
     <section id="Galería">
       <h1 class="h1-jugadores">Plantilla del equipo</h1>
-      <h2 class="h2-jugadores">Porteros</h2>
-      <div class="bloque-galeria">
+      <h2 class="h2-jugadores">Porteros<button class="btn-toggle" onclick="toggleGaleria('porteros', this)">▲</button></h2>
+      <div class="bloque-galeria" id="porteros">
         <div class="jugador">
           <img src="img/dinko-horkas.png" class="zoom1">
           <h3>Dinko Horkaš</h3>
@@ -684,8 +696,8 @@
         </div>
       </div>
 
-      <h2 class="h2-jugadores">Defensas</h2>
-      <div class="bloque-galeria">
+      <h2 class="h2-jugadores">Defensas<button class="btn-toggle" onclick="toggleGaleria('defensas', this)">▲</button></h2>
+      <div class="bloque-galeria" id="defensas">
         <div class="jugador">
           <img src="img/marvin.png" class="zoom1">
           <h3>Marvin Park</h3>
@@ -720,8 +732,8 @@
         </div>
       </div>
 
-      <h2 class="h2-jugadores">Centrocampistas</h2>
-      <div class="bloque-galeria">
+      <h2 class="h2-jugadores">Centrocampistas<button class="btn-toggle" onclick="toggleGaleria('centrocampistas', this)">▲</button></h2>
+      <div class="bloque-galeria" id="centrocampistas">
         <div class="jugador">
           <img src="img/benedetti.png" class="zoom1">
           <h3>Nicolás Benedetti Roa</h3>
@@ -764,8 +776,8 @@
         </div>
       </div>
 
-      <h2 class="h2-jugadores">Extremos</h2>
-      <div class="bloque-galeria">
+      <h2 class="h2-jugadores">Extremos <button class="btn-toggle" onclick="toggleGaleria('extremos', this)">▲</button></h2>
+      <div class="bloque-galeria" id="extremos">
         <div class="jugador">
           <img src="img/ale-garcia.png" class="zoom1">
           <h3>Pedro Alejandro García Mejías (Ale García)</h3>
@@ -776,8 +788,8 @@
         </div>
       </div>
 
-      <h2 class="h2-jugadores">Delanteros</h2>
-      <div class="bloque-galeria">
+      <h2 class="h2-jugadores">Delanteros<button class="btn-toggle" onclick="toggleGaleria('delanteros', this)">▲</button></h2>
+      <div class="bloque-galeria" id="delanteros">
         <div class="jugador">
           <img src="img/jese.png" class="zoom1">
           <h3>Jesé Rodríguez Ruiz</h3>
@@ -841,5 +853,6 @@
   <div class="copy">
     &copy; 2026 Todos los derechos reservados
   </div>
+</body>
 
 </html>
