@@ -195,14 +195,6 @@ table tr:nth-child(odd):hover {
     font-size: 40px;
 }
 
-.clasificacion-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: center;
-    padding: 50px;
-}
-
 .logo-partidos {
     width: 50px;
     height: 50px;
@@ -764,6 +756,7 @@ table tr:nth-child(odd) {
 
 #Clasificación {
     background-color: #036fd4;
+    padding: 30px;
 }
 
 /* 🔵 ASCENSO DIRECTO (1º y 2º) */
@@ -796,11 +789,65 @@ table tr:nth-child(odd) {
     padding: 50px;
 }
 
+.legend {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px;
+    background: #ffffff;
+    width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+    /* 👈 Esto lo centra */
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+}
+
+.legend-color {
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+}
+
+.ascenso {
+    background: #e10600;
+    /* rojo */
+}
+
+.promo-ascenso {
+    background: #fc8f98;
+    /* rosa */
+}
+
+.descenso {
+    background: #a200ff;
+    /* morado */
+}
+
 .logo-partidos {
     width: 50px;
     height: 50px;
     margin: 0 15px;
     vertical-align: middle;
+}
+
+.p-equipo {
+    text-align: center;
+}
+
+.p-posicion {
+    text-align: center;
 }
 
 /* Sección Historia */
@@ -830,6 +877,8 @@ table tr:nth-child(odd) {
     color: rgb(255, 255, 255);
     font-size: 150%;
     font-family: 'Acme';
+    list-style-type: none;
+    margin-bottom: 10px;
 }
 
 
@@ -1190,6 +1239,10 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 2rem;
 }
 
+figure {
+    width: 92%;
+    margin: 10px;
+}
 
 /* ============================= */
 /* 🌍 GLOBAL */
@@ -1264,7 +1317,6 @@ h2 {
 
     .columna {
         width: 90%;
-        padding: 10px;
     }
 
     /* Galería jugadores */
