@@ -876,8 +876,9 @@ table tr:nth-child(odd) {
     font-size: 120%;
     font-family: 'Acme';
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 110%;
+    text-align: justify;
 }
 
 
@@ -892,8 +893,10 @@ table tr:nth-child(odd) {
     border-radius: 25px;
     color: #ffffff;
     font-family: 'Autour One';
-    font-size: 180%;
+    font-size: 120%;
     text-align: center;
+    margin: 10px;
+    width: 105%;
 }
 
 .p-columna {
@@ -901,13 +904,15 @@ table tr:nth-child(odd) {
     border-radius: 25px;
     padding: 15px;
     color: rgb(255, 255, 255);
-    font-size: 150%;
+    font-size: 120%;
     font-family: 'Acme';
+    margin: 10px;
+    width: 105%;
+    text-align: justify;
 }
 
 .columna {
-    width: 50%;
-    padding: 20px;
+    padding: 50px;
     box-sizing: border-box;
 }
 
@@ -1166,7 +1171,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 110%;
+    height: 95%;
     object-fit: cover;
     z-index: -1;
 }
