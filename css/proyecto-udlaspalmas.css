@@ -797,7 +797,7 @@ table tr:nth-child(odd) {
     gap: 32px;
     padding: 20px;
     background: #ffffff;
-    width: 28%;
+    width: 90%;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
