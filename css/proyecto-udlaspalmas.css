@@ -269,14 +269,14 @@ table tr:nth-child(odd):hover {
 /* Zoom imágenes */
 .zoom,
 .zoom1 {
-    width: 200px;
+    width: 100px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .zoom:hover,
 .zoom1:hover {
-    transform: scale(1.5);
+    transform: scale(0.5);
 }
 
 /* Galería */
@@ -455,7 +455,7 @@ hr {
     /* 🔥 centra horizontal */
     text-align: center;
     background: linear-gradient(to right, rgba(255, 249, 76, 0.7), rgba(0, 79, 249, 0.7));
-    margin: 200px;
+    margin: 10px;
     border-radius: 25px;
 }
 
@@ -1319,8 +1319,8 @@ h2 {
     }
 
     #Clasificación table {
-        width: 200%;
-        font-size: 90%;
+        width: 80%;
+        font-size: 70%;
         overflow-x: auto;
         display: block;
         background-color: #ffffff;
