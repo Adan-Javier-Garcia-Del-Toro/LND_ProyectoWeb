@@ -25,8 +25,6 @@
     padding: 0;
 }
 
-
-
 /* Items */
 .navbar ul li {
     margin: 20px;
@@ -206,6 +204,13 @@ table tr:nth-child(odd):hover {
     vertical-align: middle;
 }
 
+.logo-clasificacion-partidos {
+    width: 50%;
+    height: 50px;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
 /* Sección Historia */
 #Historia {
     background-repeat: no-repeat;
@@ -263,6 +268,8 @@ table tr:nth-child(odd):hover {
     font-size: 150%;
     margin-top: 8px;
     padding: 25px;
+    width: 90%;
+    margin: 10px;
 }
 
 /* Zoom imágenes */
@@ -796,11 +803,11 @@ table tr:nth-child(odd) {
     gap: 32px;
     padding: 20px;
     background: #ffffff;
-    width: 90%;
+    width: 30%;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    margin: 0 auto;
-    /* 👈 Esto lo centra */
+    margin: 20px auto;
+    /* 👈 Esto lo centra horizontalmente */
 }
 
 .legend-item {
@@ -810,7 +817,8 @@ table tr:nth-child(odd) {
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 120%;
 }
 
 .legend-color {
@@ -818,6 +826,7 @@ table tr:nth-child(odd) {
     height: 22px;
     border-radius: 999px;
 }
+
 .ascenso {
     background: #e10600;
     /* rojo */
@@ -834,8 +843,8 @@ table tr:nth-child(odd) {
 }
 
 .logo-partidos {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
     display: inline-block;
 }
 
@@ -945,8 +954,6 @@ table tr:nth-child(odd) {
 }
 
 /* Galería */
-
-
 
 .bloque-galeria {
     display: flex;
@@ -1244,6 +1251,10 @@ figure {
     margin: 10px;
 }
 
+.logo-clasificacion-partidos {
+    width: 8%;
+}
+
 /* ============================= */
 /* 🌍 GLOBAL */
 /* ============================= */
@@ -1268,7 +1279,6 @@ h2 {
 
 @media (max-width: 768px) {
 
-    /* Navbar */
     .navbar {
         flex-direction: column;
         padding: 10px;
@@ -1298,11 +1308,23 @@ h2 {
     }
 
     .logo-partidos {
-        width: 50%;
+        width: 20%;
     }
 
     .p-partidos {
-        font-size: 100%;
+        font-size: 70%;
+    }
+
+    .legend {
+        width: 80%;
+    }
+
+    .legend-item {
+        font-size: 80%;
+    }
+
+    .logo-clasificacion-partidos {
+        width: 60%;
     }
 
     .himno-container {
@@ -1318,11 +1340,11 @@ h2 {
     }
 
     #Clasificación table {
-        width: 80%;
-        font-size: 70%;
+        width: 100%;
+        font-size: 85%;
         overflow-x: auto;
-        display: block;
-        background-color: #ffffff;
+        margin: 20px;
+        border-radius: 15px;
     }
 
     #Partidos td {
@@ -1371,16 +1393,33 @@ h2 {
     /* Galería jugadores */
     .bloque-galeria {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
     }
 
-    .jugador img,
-    .portero img {
-        width: 160px;
+    .jugador {
+        flex: 0 0 45%;
+        /* Dos jugadores por fila */
+        max-width: none;
+        /* quitar límite de ancho */
+        margin: 5px;
+        /* reducir margen */
     }
+
+    .jugador img {
+        width: 100%;
+        /* imagen siempre al ancho del contenedor */
+        max-width: none;
+    }
+
+    .jugador h3 {
+        font-size: 100%;
+        /* texto más pequeño en móvil */
+        padding: 10px;
+    }
+
 
     /* Noticias */
     #Noticias .noticia {
@@ -1402,12 +1441,27 @@ h2 {
     }
 
     .bloque img {
-        width: 100%;
-        margin: 0;
+        width: 75%;
+        margin: 50px;
     }
 
     .bloque p {
-        width: 95%;
+        width: 80%;
+        margin: 40px;
+        margin-top: 10px;
+    }
+
+    /* Zoom imágenes */
+    .zoom,
+    .zoom1 {
+        width: 200px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .zoom:hover,
+    .zoom1:hover {
+        transform: scale(1.1);
     }
 
     /* Footer */
@@ -1558,10 +1612,11 @@ h2 {
 
     #Clasificación table {
         width: 90%;
-        font-size: 110%;
+        font-size: 50%;
         overflow-x: auto;
         display: block;
-        padding: 20px;
+        padding: 40px;
+        background-color: #ffffff;
     }
 
     .btn-toggle {
