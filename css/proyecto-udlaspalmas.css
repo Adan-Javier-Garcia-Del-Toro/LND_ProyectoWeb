@@ -323,6 +323,7 @@ table tr:nth-child(odd):hover {
     font-size: 125%;
     border-radius: 20px;
     padding: 15px;
+    background: #0057B8;
 }
 
 /* Porteros */
@@ -981,15 +982,6 @@ table tr:nth-child(odd) {
     width: 220px;
 }
 
-.jugador h3 {
-    margin-top: 12px;
-    color: white;
-    font-size: 125%;
-    background: #0057B8;
-    border-radius: 20px;
-    padding: 15px;
-}
-
 /* Porteros */
 .bloque-galeria.porteros img,
 .portero img {
@@ -1132,17 +1124,6 @@ hr {
     text-align: center;
 }
 
-#Noticias .noticia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* centra el contenido */
-    margin: 50px auto;
-    /* centra la caja */
-    text-align: justify;
-    width: 50%;
-}
-
 .h1-noticias {
     background-color: #ffd000;
     color: #036fd4;
@@ -1214,38 +1195,6 @@ hr {
     text-align: center;
 }
 
-
-/* Slider */
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 120px;
-    height: 5px;
-    background: #555;
-    border-radius: 5px;
-    outline: none;
-}
-
-/* Barra activa */
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(to right, rgb(255, 247, 0), rgb(0, 100, 249));
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-.contenido {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    top: 40%;
-    font-size: 2rem;
-}
-
 figure {
     width: 92%;
     margin: 10px;
@@ -1280,11 +1229,7 @@ h2 {
 @media (max-width: 768px) {
 
     .navbar {
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 20px;
-        margin: 40px;
-        width: 70%;
+        display: none;
     }
 
     .navbar ul {
