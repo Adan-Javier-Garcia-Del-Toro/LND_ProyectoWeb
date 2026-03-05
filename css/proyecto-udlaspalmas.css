@@ -1253,15 +1253,16 @@ h2 {
     }
 
     .logo-partidos {
-        width: 20%;
+        width: 10%;
+        height: 30px;
     }
 
     .p-partidos {
-        font-size: 70%;
+        font-size: 80%;
     }
 
     .legend {
-        width: 80%;
+        width: 90%;
     }
 
     .legend-item {
@@ -1279,17 +1280,20 @@ h2 {
     /* Tablas */
     #Partidos table {
         width: 200%;
-        font-size: 14px;
         overflow-x: auto;
         display: block;
+        font-size: 100%;
+    }
+
+    .partidos-container {
+        padding: 10px;
     }
 
     #Clasificación table {
-        width: 100%;
-        font-size: 85%;
+        width: 190%;
+        font-size: 45%;
         overflow-x: auto;
-        margin: 20px;
-        border-radius: 15px;
+        margin: 0px;
     }
 
     #Partidos td {
