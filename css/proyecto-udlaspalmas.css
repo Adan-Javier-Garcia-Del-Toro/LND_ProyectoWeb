@@ -679,12 +679,6 @@ table tr:nth-child(odd) {
     color: #ffd000;
 }
 
-.partidos-container {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-}
-
 /* Botón hamburguesa */
 .menu-btn {
     font-size: 30px;
@@ -1204,6 +1198,10 @@ figure {
     width: 8%;
 }
 
+.mobile {
+    display: none;
+}
+
 /* ============================= */
 /* 🌍 GLOBAL */
 /* ============================= */
@@ -1258,11 +1256,11 @@ h2 {
     }
 
     .p-partidos {
-        font-size: 80%;
+        font-size: 85%;
     }
 
     .legend {
-        width: 90%;
+        width: 80%;
     }
 
     .legend-item {
@@ -1270,7 +1268,16 @@ h2 {
     }
 
     .logo-clasificacion-partidos {
-        width: 70%;
+        width: 60%;
+        height: 40px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inline;
     }
 
     .himno-container {
@@ -1280,20 +1287,26 @@ h2 {
     /* Tablas */
     #Partidos table {
         width: 200%;
+        font-size: 14px;
         overflow-x: auto;
         display: block;
-        font-size: 100%;
     }
 
     .partidos-container {
-        padding: 10px;
+        padding: 25px;
     }
 
     #Clasificación table {
-        width: 190%;
-        font-size: 45%;
+        width: 100%;
+        font-size: 85%;
         overflow-x: auto;
-        margin: 0px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+
+    #Clasificación th,
+    #Clasificación td {
+        font-size: 110%;
     }
 
     #Partidos td {
